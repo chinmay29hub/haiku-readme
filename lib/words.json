@@ -1,0 +1,42 @@
+{
+    "nouns": [
+      { "word": "code", "syllables": 1 },
+      { "word": "bug", "syllables": 1 },
+      { "word": "loop", "syllables": 1 },
+      { "word": "cloud", "syllables": 1 },
+      { "word": "server", "syllables": 2 },
+      { "word": "function", "syllables": 2 },
+      { "word": "Stack Overflow", "syllables": 4 },
+      { "word": "thread", "syllables": 1 },
+      { "word": "stream", "syllables": 1 },
+      { "word": "dawn", "syllables": 1 },
+      { "word": "coffee", "syllables": 2 },
+      { "word": "commit", "syllables": 2 }
+    ],
+    "verbs": [
+      { "word": "flows", "syllables": 1 },
+      { "word": "dance", "syllables": 1 },
+      { "word": "crash", "syllables": 1 },
+      { "word": "debug", "syllables": 2 },
+      { "word": "compile", "syllables": 2 },
+      { "word": "runs", "syllables": 1 },
+      { "word": "build", "syllables": 1 },
+      { "word": "merge", "syllables": 1 },
+      { "word": "brings", "syllables": 1 }
+    ],
+    "adjectives": [
+      { "word": "swift", "syllables": 1 },
+      { "word": "silent", "syllables": 2 },
+      { "word": "elegant", "syllables": 3 },
+      { "word": "bright", "syllables": 1 },
+      { "word": "bold", "syllables": 1 },
+      { "word": "clean", "syllables": 1 }
+    ],
+    "adverbs": [
+      { "word": "softly", "syllables": 2 },
+      { "word": "quickly", "syllables": 2 },
+      { "word": "boldly", "syllables": 2 },
+      { "word": "calmly", "syllables": 2 },
+      { "word": "carefully", "syllables": 3 }
+    ]
+  }
