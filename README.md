@@ -5,6 +5,9 @@
 
 Generate tech-themed haiku SVGs for your GitHub Profile README. Add a poetic touch to your profile with a single line!
 
+![test](https://chinmay29hub-haiku-readme.vercel.app/api?theme=dark&type=horizontal&border=true)
+
+
 ## Usage
 
 Embed a haiku SVG in your README with:
