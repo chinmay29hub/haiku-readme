@@ -2,23 +2,12 @@
   "name": "haiku-readme",
   "version": "1.0.0",
   "description": "Generate tech-themed haiku SVGs for GitHub Profile READMEs",
-  "main": "api/index.js",
-  "directories": {
-    "lib": "lib"
-  },
   "scripts": {
-    "dev": "nodemon ./api/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "dependencies": {
-    "dotenv": "^16.4.5",
-    "seedrandom": "^3.0.5",
-    "syllable": "^4.1.0"
+    "start": "vercel dev",
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend"
   },
   "devDependencies": {
     "vercel": "^28.0.0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "license": "MIT"
 }
