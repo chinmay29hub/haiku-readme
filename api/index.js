@@ -15,9 +15,7 @@ const serverlessHandler = (req, res) => {
     const svg = generateSvg(haiku, { theme, layout, border: useBorder });
 
     res.setHeader('Content-Type', 'image/svg+xml');
-    if (forceRefresh) {
-      res.setHeader('Cache-Control', 'no-cache');
-    }
+    res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
     res.status(200).send(svg);
   } catch (error) {
     console.error('Error generating haiku:', error);
