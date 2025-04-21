@@ -7,9 +7,11 @@
     "lib": "lib"
   },
   "scripts": {
+    "dev": "node ./api/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "dotenv": "^16.4.5",
     "seedrandom": "^3.0.5",
     "syllable": "^4.1.0"
   },
