@@ -20,7 +20,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/frontend/dist/$1",
+      "dest": "/frontend/dist/index.html",
       "headers": {
         "Cache-Control": "no-cache"
       }
