@@ -1,15 +1,9 @@
-name: 'Update README with Random Haiku'
-description: 'Updates the README with a fresh haiku by updating the URL timestamp to avoid cache.'
-author: 'Chinmay Sonawane'
-branding:
-  icon: refresh-cw
-  color: purple
 runs:
   using: 'composite'
   steps:
     - run: |
         TIMESTAMP=$(date +%s)
-        sed -i "s|https://chinmay29hub-haiku-readme.vercel.app/api[^)]*t=[0-9]*|https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha\&type=horizontal\&border=true\&t=$TIMESTAMP|" README.md
+        sed -i -E 's|(https://chinmay29hub-haiku-readme\.vercel\.app/api\?[^"]*t=)[0-9]+|\1'"$TIMESTAMP"'|g' README.md
         git config user.name "GitHub Action"
         git config user.email "action@github.com"
         git add README.md
