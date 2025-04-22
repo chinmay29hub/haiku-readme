@@ -16,9 +16,9 @@ jobs:
       - name: Update README
         run: |
           TIMESTAMP=$(date +%s)
-          sed -i "s|https://chinmay29hub-haiku-readme.vercel.app/api[^)]*t=[0-9]*|https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha\&type=vertical\&border=true\&t=$TIMESTAMP|" test.md
+          sed -i "s|https://chinmay29hub-haiku-readme.vercel.app/api[^)]*t=[0-9]*|https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha\&type=vertical\&border=true\&t=$TIMESTAMP|" Readme.md
           git config user.name "GitHub Action"
           git config user.email "action@github.com"
-          git add test.md
+          git add Readme.md
           git commit -m "Update haiku timestamp" || echo "No changes to commit"
           git push

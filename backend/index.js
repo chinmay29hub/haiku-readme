@@ -12,12 +12,12 @@ app.use(express.static(path.join(__dirname, '../frontend/dist')));
 // API endpoint
 app.get('/api', (req, res) => {
   try {
-    const { theme = 'catppuccin_mocha', type = 'vertical', border = 'true', refresh = 'false' } = req.query;
+    const { theme = 'catppuccin_mocha', type = 'vertical', border = 'true' } = req.query;
     const layout = ['vertical', 'horizontal', 'compact'].includes(type) ? type : 'vertical';
     const useBorder = border === 'true';
-    const forceRefresh = refresh === 'true';
+    // const forceRefresh = refresh === 'true';
 
-    const haiku = generateHaiku(forceRefresh);
+    const haiku = generateHaiku();
     const svg = generateSvg(haiku, { theme, layout, border: useBorder });
 
     res.setHeader('Content-Type', 'image/svg+xml');

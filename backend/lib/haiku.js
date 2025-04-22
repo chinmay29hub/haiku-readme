@@ -4,7 +4,7 @@ const wordBank = require('./words.json');
 const templates = require('./templates.json');
 
 // Generate a haiku with 5-7-5 syllable structure
-function generateHaiku(forceRefresh = false) {
+function generateHaiku() {
   // Use a unique seed per request for randomness
   const seed = Date.now().toString() + Math.random().toString();
   seedrandom(seed, { global: false }); // Non-global to avoid affecting other calls
