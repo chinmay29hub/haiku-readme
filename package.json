@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Generate tech-themed haiku SVGs for GitHub Profile READMEs",
   "scripts": {
+    "dev": "nodemon ./backend/index.js",
     "start": "vercel dev",
     "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend"
   },
