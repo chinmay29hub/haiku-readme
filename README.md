@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=vertical&border=true&t=1745305910"HaikuReadme SVG"/>
+  <img src="https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=horizontal&border=true&t=1745305910"HaikuReadme SVG"/>
 </p>
 
 # HaikuReadme
