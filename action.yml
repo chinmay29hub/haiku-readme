@@ -1,6 +1,9 @@
 name: 'Update README with Random Haiku'
 description: 'Updates the README with a fresh haiku by updating the URL timestamp to avoid cache.'
 author: 'Chinmay Sonawane'
+branding:
+  icon: refresh-cw
+  color: purple
 runs:
   using: 'composite'
   steps:
