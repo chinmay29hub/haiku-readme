@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=horizontal&border=true&t=1745307612" alt="HaikuReadme SVG"/>
+  <img src="https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=horizontal&border=true&t=1745308218" alt="HaikuReadme SVG"/>
 </p>
 
 # HaikuReadme
@@ -13,7 +13,7 @@
 HaikuReadme generates poetic, customizable haiku SVGs you can embed in your GitHub profile. Choose from themes, layouts, and border styles — perfect for developers with a love for code and creativity.
 
 <p align="center">
-  <img src="https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=horizontal&border=true&t=1745307612" alt="Example Haiku" />
+  <img src="https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=horizontal&border=true&t=1745308218" alt="Example Haiku" />
 </p>
 
 🔗 **Live demo**: [HaikuReadme Web](https://chinmay29hub-haiku-readme.vercel.app)
@@ -103,7 +103,7 @@ jobs:
       - name: Update README
         run: |
           TIMESTAMP=$(date +%s)
-          sed -i "s|https://chinmay29hub-haiku-readme.vercel.app/api[^)]*t=[0-9]*|https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=horizontal&border=true&t=1745307612$TIMESTAMP|" test.md
+          sed -i "s|https://chinmay29hub-haiku-readme.vercel.app/api[^)]*t=[0-9]*|https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=horizontal&border=true&t=1745308218$TIMESTAMP|" test.md
           git config user.name "GitHub Action"
           git config user.email "action@github.com"
           git add test.md
