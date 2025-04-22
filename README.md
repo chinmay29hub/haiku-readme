@@ -85,9 +85,12 @@ This ensures fresh content and bypasses Vercel's response caching.
 ### GitHub Action Workflow
 
 ```yaml
-name: Update README with Random Haiku
+name: Haiku Generator
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     - cron: '0 * * * *' # Every hour
   workflow_dispatch:
@@ -99,16 +102,11 @@ jobs:
   update-readme:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Update README
-        run: |
-          TIMESTAMP=$(date +%s)
-          sed -i "s|https://chinmay29hub-haiku-readme.vercel.app/api[^)]*t=[0-9]*|https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=horizontal&border=true&t=1745309321$TIMESTAMP|" test.md
-          git config user.name "GitHub Action"
-          git config user.email "action@github.com"
-          git add test.md
-          git commit -m "Update haiku timestamp" || echo "No changes to commit"
-          git push
+      - name: Checkout the code
+        uses: actions/checkout@v3
+
+      - name: Update README with Random Haiku
+        uses: chinmay29hub/haiku-readme@v1
 ```
 
 See the workflow file in [`.github/workflows/update-readme.yml`](.github/workflows/update-readme.yml).
