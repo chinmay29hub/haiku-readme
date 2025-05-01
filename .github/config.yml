@@ -4,18 +4,24 @@
 
 # Comment to be posted to on first time issues
 newIssueWelcomeComment: >
-  Thanks for opening your first issue here! Be sure to follow the issue template!
+  👋 Welcome @{{ author }}! Thanks for opening your first issue in **HaikuReadme**.  
+    We're excited to hear your thoughts! 🎉
 
 # Configuration for new-pr-welcome - https://github.com/behaviorbot/new-pr-welcome
 
 # Comment to be posted to on PRs from first time contributors in your repository
 newPRWelcomeComment: >
-  Thanks for opening this pull request! Please check out our contributing guidelines.
+  🎉 **Welcome @{{ author }} to HaikuReadme!**  
+    Thanks for submitting your first pull request! ✨  
+    We're thrilled to have your poetic touch in the codebase.  
+    Let’s review and merge your haikus! 📜🚀
 
 # Configuration for first-pr-merge - https://github.com/behaviorbot/first-pr-merge
 
 # Comment to be posted to on pull requests merged by a first time user
 firstPRMergeComment: >
-  Congrats on merging your first pull request! We here at behaviorbot are proud of you!
+  🌟 Congrats @{{ author }} on your first merged PR in **HaikuReadme**!  
+    You’re now officially a contributor to our poetic project. 🥳  
+    Keep the haikus flowing!
 
 # It is recommended to include as many gifs and emojis as possible!
