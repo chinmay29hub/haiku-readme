@@ -27,15 +27,15 @@ cd backend
 npm install
 npm start
 ```
-- (Backend)Visit [[http://localhost:](http://localhost:3000/api?theme=catppuccin_mocha&type=vertical&border=true)](http://localhost:3000/api?theme=catppuccin_mocha&type=vertical&border=true) to view the svg directly. 
+- (Backend)Visit [http://localhost:3000/api?theme=catppuccin_mocha&type=vertical&border=true](http://localhost:3000/api?theme=catppuccin_mocha&type=vertical&border=true) to view the svg directly. 
 
 
-6. Add .env to frontend directory and add the following variables:
+1. Add .env to frontend directory and add the following variables:
 ```bash
 VITE_API_URL=http://localhost:3000
 ```
 
-7. Frontend
+1. Frontend
 Open a new terminal tab/window:
 ```bash
 cd frontend
