@@ -16,18 +16,37 @@ Thanks for your interest in contributing! 🚀 Whether it’s fixing bugs, impro
    git checkout -b feature/amazing-feature
    ```
 
-4. **Make your changes** and commit  
+4. Backend
+```bash
+cd backend
+npm install
+npm start
+```
+
+5. Frontend
+Open a new terminal tab/window:
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+- (Frontend)Visit [http://localhost:5173](http://localhost:5173) to view the app locally.
+- (Backend)Visit [[http://localhost:](http://localhost:3000/api?theme=catppuccin_mocha&type=vertical&border=true)](http://localhost:3000/api?theme=catppuccin_mocha&type=vertical&border=true) to view the svg directly. 
+
+
+6. **Make your changes** and commit  
    ```bash
    git add .
    git commit -m "Add: New haiku theme - galaxy"
    ```
 
-5. **Push** to your fork  
+7. **Push** to your fork  
    ```bash
    git push origin feature/amazing-feature
    ```
 
-6. **Open a Pull Request** with a clear title and description.
+8. **Open a Pull Request** with a clear title and description.
 
 ---
 
