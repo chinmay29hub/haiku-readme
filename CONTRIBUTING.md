@@ -16,14 +16,26 @@ Thanks for your interest in contributing! 🚀 Whether it’s fixing bugs, impro
    git checkout -b feature/amazing-feature
    ```
 
-4. Backend
+4. Create a .env file in the backend directory and add the following variables:
+```bash
+NODE_ENV=development
+```
+
+5. Backend
 ```bash
 cd backend
 npm install
 npm start
 ```
+- (Backend)Visit [[http://localhost:](http://localhost:3000/api?theme=catppuccin_mocha&type=vertical&border=true)](http://localhost:3000/api?theme=catppuccin_mocha&type=vertical&border=true) to view the svg directly. 
 
-5. Frontend
+
+6. Add .env to frontend directory and add the following variables:
+```bash
+VITE_API_URL=http://localhost:3000
+```
+
+7. Frontend
 Open a new terminal tab/window:
 ```bash
 cd frontend
@@ -32,21 +44,21 @@ npm run dev
 ```
 
 - (Frontend)Visit [http://localhost:5173](http://localhost:5173) to view the app locally.
-- (Backend)Visit [[http://localhost:](http://localhost:3000/api?theme=catppuccin_mocha&type=vertical&border=true)](http://localhost:3000/api?theme=catppuccin_mocha&type=vertical&border=true) to view the svg directly. 
 
 
-6. **Make your changes** and commit  
+
+8. **Make your changes** and commit  
    ```bash
    git add .
    git commit -m "Add: New haiku theme - galaxy"
    ```
 
-7. **Push** to your fork  
+9. **Push** to your fork  
    ```bash
    git push origin feature/amazing-feature
    ```
 
-8. **Open a Pull Request** with a clear title and description.
+10. **Open a Pull Request** with a clear title and description.
 
 ---
 
