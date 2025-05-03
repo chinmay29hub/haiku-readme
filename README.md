@@ -4,9 +4,16 @@
 
 # HaikuReadme
 
+<div align="center">
+
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/chinmay29hub/haiku-readme/actions)
+[![Update README with Random Haiku](https://github.com/chinmay29hub/haiku-readme/actions/workflows/update-readme.yml/badge.svg)](https://github.com/chinmay29hub/haiku-readme/actions/workflows/update-readme.yml)
+[![CodeQL](https://github.com/chinmay29hub/haiku-readme/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/chinmay29hub/haiku-readme/actions/workflows/github-code-scanning/codeql)
+[![Dependabot Updates](https://github.com/chinmay29hub/haiku-readme/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/chinmay29hub/haiku-readme/actions/workflows/dependabot/dependabot-updates)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 ![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
+
+</div>
 
 > ✨ Generate beautiful, tech-themed haiku SVGs for your GitHub README!
 
