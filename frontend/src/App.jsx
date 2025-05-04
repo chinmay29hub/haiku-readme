@@ -7,8 +7,14 @@ function App() {
   const [border, setBorder] = useState(true);
 
   const themes = [
-    'catppuccin_mocha', 'dark', 'dracula', 'nord', 'tokyo_night',
-    'solarized_dark', 'gruvbox_dark', 'cyberpunk'
+    'catppuccin_mocha',
+    'dark',
+    'dracula',
+    'nord',
+    'tokyo_night',
+    'solarized_dark',
+    'gruvbox_dark',
+    'cyberpunk',
   ];
   const types = ['vertical', 'horizontal', 'compact'];
 
@@ -18,7 +24,8 @@ function App() {
   const copyToClipboard = () => {
     // Try modern clipboard API
     if (navigator.clipboard) {
-      navigator.clipboard.writeText(markdownUrl)
+      navigator.clipboard
+        .writeText(markdownUrl)
         .then(() => alert('Markdown URL copied to clipboard!'))
         .catch(() => {
           // Fallback for mobile
@@ -30,6 +37,7 @@ function App() {
             document.execCommand('copy');
             alert('Markdown URL copied to clipboard!');
           } catch (err) {
+            void err;
             alert('Failed to copy. Please copy manually.');
           }
           document.body.removeChild(textarea);
@@ -44,6 +52,7 @@ function App() {
         document.execCommand('copy');
         alert('Markdown URL copied to clipboard!');
       } catch (err) {
+        void err;
         alert('Failed to copy. Please copy manually.');
       }
       document.body.removeChild(textarea);
@@ -62,7 +71,9 @@ function App() {
           <label>Theme:</label>
           <select value={theme} onChange={(e) => setTheme(e.target.value)}>
             {themes.map((t) => (
-              <option key={t} value={t}>{t}</option>
+              <option key={t} value={t}>
+                {t}
+              </option>
             ))}
           </select>
         </div>
@@ -70,7 +81,9 @@ function App() {
           <label>Type:</label>
           <select value={type} onChange={(e) => setType(e.target.value)}>
             {types.map((t) => (
-              <option key={t} value={t}>{t}</option>
+              <option key={t} value={t}>
+                {t}
+              </option>
             ))}
           </select>
         </div>
@@ -86,7 +99,11 @@ function App() {
 
       <div className="preview">
         <h2>Preview</h2>
-        <img src={svgUrl} alt="Haiku SVG" onError={() => alert('Failed to load SVG')} />
+        <img
+          src={svgUrl}
+          alt="Haiku SVG"
+          onError={() => alert('Failed to load SVG')}
+        />
       </div>
 
       <div className="markdown">
@@ -97,7 +114,15 @@ function App() {
 
       <footer>
         <p>
-          Check out the <a href="https://github.com/chinmay29hub/haiku-readme" target='_blank'>GitHub repo</a> for more details.
+          Check out the{' '}
+          <a
+            href="https://github.com/chinmay29hub/haiku-readme"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub repo
+          </a>{' '}
+          for more details.
         </p>
       </footer>
     </div>

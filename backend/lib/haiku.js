@@ -15,8 +15,12 @@ function generateHaiku() {
   // Generate a line with given syllable count
   function generateLine(syllableCount, retries = 3) {
     if (retries === 0) {
-      console.warn(`Failed to generate line with ${syllableCount} syllables after retries`);
-      return syllableCount === 5 ? 'Code runs smoothly now,' : 'Functions work in silent peace.';
+      console.warn(
+        `Failed to generate line with ${syllableCount} syllables after retries`
+      );
+      return syllableCount === 5
+        ? 'Code runs smoothly now,'
+        : 'Functions work in silent peace.';
     }
 
     const templateKey = syllableCount === 5 ? 'fiveSyllable' : 'sevenSyllable';
@@ -27,7 +31,6 @@ function generateHaiku() {
 
     const template = random(templates[templateKey]);
     let line = [];
-    let totalSyllables = 0;
 
     for (let i = 0; i < template.pattern.length; i++) {
       const part = template.pattern[i];
@@ -39,14 +42,13 @@ function generateHaiku() {
           console.error(`Invalid wordBank category: ${part}`);
           return generateLine(syllableCount, retries - 1);
         }
-        const words = wordBank[part].filter(w => w.syllables === syllables);
+        const words = wordBank[part].filter((w) => w.syllables === syllables);
         if (!words.length) {
           console.warn(`No ${part} with ${syllables} syllables`);
           return generateLine(syllableCount, retries - 1);
         }
         const word = random(words).word;
         line.push(word);
-        totalSyllables += syllables;
       }
     }
 
@@ -59,7 +61,9 @@ function generateHaiku() {
     try {
       const actualSyllables = syllable(lineText.replace(/[,.\s]/g, ' ').trim());
       if (actualSyllables !== syllableCount) {
-        console.warn(`Syllable mismatch: expected ${syllableCount}, got ${actualSyllables}`);
+        console.warn(
+          `Syllable mismatch: expected ${syllableCount}, got ${actualSyllables}`
+        );
         return generateLine(syllableCount, retries - 1);
       }
     } catch (error) {

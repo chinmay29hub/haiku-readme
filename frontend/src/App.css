@@ -65,7 +65,7 @@ label {
 }
 
 select,
-input[type="checkbox"] {
+input[type='checkbox'] {
   padding: 8px;
   background: #2a2e45;
   color: #cdd6f4;
@@ -75,7 +75,7 @@ input[type="checkbox"] {
   width: 100%;
 }
 
-.control-group input[type="checkbox"] {
+.control-group input[type='checkbox'] {
   width: auto;
   margin-top: 8px;
 }
@@ -172,7 +172,8 @@ a:hover {
     width: clamp(200px, 30%, 250px);
   }
 
-  .preview, .markdown {
+  .preview,
+  .markdown {
     padding: 20px;
   }
 }
