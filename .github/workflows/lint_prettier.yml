@@ -3,6 +3,7 @@ name: Lint and Format Check
 on:
   pull_request:
     branches: [main]
+  workflow_dispatch:
 
 jobs:
   lint-frontend:
