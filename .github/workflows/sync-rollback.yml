@@ -1,0 +1,38 @@
+name: Sync Rollback with Main
+
+on:
+  workflow_dispatch:  # Manual trigger
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout the repository
+      uses: actions/checkout@v2
+
+    - name: Set up Git
+      uses: actions/setup-git@v2
+
+    - name: Fetch all branches
+      run: git fetch --all
+
+    - name: Checkout rollback branch
+      run: git checkout rollback
+
+    - name: Ensure rollback is up-to-date with main
+      run: |
+        # Ensure we are on the rollback branch
+        git checkout rollback
+
+        # Fetch the latest changes
+        git pull origin main
+
+        # Merge main into rollback safely
+        git merge main --no-ff --commit -m "Merge main into rollback"
+
+    - name: Push changes to rollback branch
+      run: git push origin rollback
+
+    - name: Confirm sync
+      run: echo "Rollback branch has been successfully updated with main."
