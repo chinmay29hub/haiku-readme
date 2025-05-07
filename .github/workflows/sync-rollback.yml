@@ -1,38 +1,33 @@
 name: Sync Rollback with Main
 
 on:
-  workflow_dispatch:  # Manual trigger
+  workflow_dispatch:
 
 jobs:
   sync:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Allows pushing to the repo
 
     steps:
-    - name: Checkout the repository
-      uses: actions/checkout@v2
+    - name: Checkout repository (with full history)
+      uses: actions/checkout@v4
       with:
-        fetch-depth: 0  # This fetches all history for all branches
+        fetch-depth: 0  # Fetches all commits, not just latest
 
-    - name: Fetch all branches
-      run: git fetch --all
-
-    - name: Checkout rollback branch
-      run: git checkout rollback
-
-    - name: Ensure rollback is up-to-date with main
+    - name: Configure Git (for merge commits)
       run: |
-        # Ensure we are on the rollback branch
-        git checkout rollback
-        
-        # Set user info for commits
         git config user.name "GitHub Actions"
         git config user.email "actions@github.com"
+
+    - name: Fetch latest changes from remote
+      run: git fetch --all  # Ensures we have the newest main & rollback
+
+    - name: Merge main into rollback (with conflict check)
+      run: |
+        git checkout rollback
+        git reset --hard origin/rollback  # Ensure local rollback matches remote
+        git merge origin/main --no-ff -m "Merge main into rollback (Automated)"
         
-        # Merge main into rollback
-        git merge origin/main --no-ff -m "Merge main into rollback"
-
-    - name: Push changes to rollback branch
-      run: git push origin rollback
-
-    - name: Confirm sync
-      run: echo "Rollback branch has been successfully updated with main."
+        # Push only if merge succeeds
+        git push origin rollback
