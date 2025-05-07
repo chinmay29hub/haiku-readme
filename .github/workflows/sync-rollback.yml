@@ -10,9 +10,8 @@ jobs:
     steps:
     - name: Checkout the repository
       uses: actions/checkout@v2
-
-    - name: Set up Git
-      uses: actions/setup-git@v2
+      with:
+        fetch-depth: 0  # This fetches all history for all branches
 
     - name: Fetch all branches
       run: git fetch --all
@@ -24,12 +23,13 @@ jobs:
       run: |
         # Ensure we are on the rollback branch
         git checkout rollback
-
-        # Fetch the latest changes
-        git pull origin main
-
-        # Merge main into rollback safely
-        git merge main --no-ff --commit -m "Merge main into rollback"
+        
+        # Set user info for commits
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
+        
+        # Merge main into rollback
+        git merge origin/main --no-ff -m "Merge main into rollback"
 
     - name: Push changes to rollback branch
       run: git push origin rollback
