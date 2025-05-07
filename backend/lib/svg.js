@@ -1,49 +1,49 @@
 const themes = {
   catppuccin_mocha: {
-    background: "#302c4e",
-    text: "#ffffff",
-    border: "#f5c2e7",
+    background: '#302c4e',
+    text: '#ffffff',
+    border: '#f5c2e7',
   },
   dark: {
-    background: "#1a1a1a",
-    text: "#d4d4d4",
-    border: "#bb86fc",
+    background: '#1a1a1a',
+    text: '#d4d4d4',
+    border: '#bb86fc',
   },
   dracula: {
-    background: "#282a36",
-    text: "#f8f8f2",
-    border: "#ff79c6",
+    background: '#282a36',
+    text: '#f8f8f2',
+    border: '#ff79c6',
   },
   nord: {
-    background: "#2e3440",
-    text: "#eceff4",
-    border: "#88c0d0",
+    background: '#2e3440',
+    text: '#eceff4',
+    border: '#88c0d0',
   },
   tokyo_night: {
-    background: "#1a1b26",
-    text: "#c0caf5",
-    border: "#7aa2f7",
+    background: '#1a1b26',
+    text: '#c0caf5',
+    border: '#7aa2f7',
   },
   solarized_dark: {
-    background: "#002b36",
-    text: "#839496",
-    border: "#b58900",
+    background: '#002b36',
+    text: '#839496',
+    border: '#b58900',
   },
   gruvbox_dark: {
-    background: "#282828",
-    text: "#ebdbb2",
-    border: "#fabd2f",
+    background: '#282828',
+    text: '#ebdbb2',
+    border: '#fabd2f',
   },
   cyberpunk: {
-    background: "#0f0f0f",
-    text: "#ff00f7",
-    border: "#00fff7",
+    background: '#0f0f0f',
+    text: '#ff00f7',
+    border: '#00fff7',
   },
 };
 
 function generateSvg(
   haiku,
-  { theme = "catppuccin_mocha", layout = "vertical", border = true }
+  { theme = 'catppuccin_mocha', layout = 'vertical', border = true }
 ) {
   const layouts = {
     vertical: {
@@ -72,13 +72,13 @@ function generateSvg(
 
   const escapeHtml = (str) =>
     str
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;")
-      .replace(/'/g, "&apos;");
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&apos;');
 
-  const lines = haiku.split("\n").map((line) => escapeHtml(line));
+  const lines = haiku.split('\n').map((line) => escapeHtml(line));
   const totalTextHeight = lines.length * config.lineSpacing;
   const textY = (config.height - totalTextHeight) / 2 + config.fontSize;
 
@@ -91,7 +91,7 @@ function generateSvg(
     x="1"
     y="1"
     fill="${colors.background}"
-    stroke="${border ? colors.border : "none"}"
+    stroke="${border ? colors.border : 'none'}"
     stroke-width="4"
     rx="10"
   />

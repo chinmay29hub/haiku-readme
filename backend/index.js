@@ -12,8 +12,14 @@ app.use(express.static(path.join(__dirname, '../frontend/dist')));
 // API endpoint
 app.get('/api', (req, res) => {
   try {
-    const { theme = 'catppuccin_mocha', type = 'vertical', border = 'true' } = req.query;
-    const layout = ['vertical', 'horizontal', 'compact'].includes(type) ? type : 'vertical';
+    const {
+      theme = 'catppuccin_mocha',
+      type = 'vertical',
+      border = 'true',
+    } = req.query;
+    const layout = ['vertical', 'horizontal', 'compact'].includes(type)
+      ? type
+      : 'vertical';
     const useBorder = border === 'true';
     // const forceRefresh = refresh === 'true';
 
@@ -26,7 +32,11 @@ app.get('/api', (req, res) => {
   } catch (error) {
     console.error('Error generating haiku:', error);
     res.setHeader('Content-Type', 'image/svg+xml');
-    res.status(500).send('<svg width="300" height="100"><text x="10" y="20" fill="#fff">Error generating haiku</text></svg>');
+    res
+      .status(500)
+      .send(
+        '<svg width="300" height="100"><text x="10" y="20" fill="#fff">Error generating haiku</text></svg>'
+      );
   }
 });
 

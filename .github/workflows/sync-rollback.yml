@@ -1,0 +1,33 @@
+name: Sync Rollback with Main
+
+on:
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Allows pushing to the repo
+
+    steps:
+    - name: Checkout repository (with full history)
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # Fetches all commits, not just latest
+
+    - name: Configure Git (for merge commits)
+      run: |
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
+
+    - name: Fetch latest changes from remote
+      run: git fetch --all  # Ensures we have the newest main & rollback
+
+    - name: Merge main into rollback (with conflict check)
+      run: |
+        git checkout rollback
+        git reset --hard origin/rollback  # Ensure local rollback matches remote
+        git merge origin/main --no-ff -m "Merge main into rollback (Automated)"
+        
+        # Push only if merge succeeds
+        git push origin rollback
