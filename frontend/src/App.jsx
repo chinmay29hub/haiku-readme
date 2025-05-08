@@ -59,6 +59,13 @@ function App() {
     }
   };
 
+  // Update theme, type, and border at random.
+  const randomizeAppearance = () => {
+    setTheme(themes[Math.floor(Math.random() * themes.length)]);
+    setType(types[Math.floor(Math.random() * types.length)]);
+    setBorder(Math.round(Math.random()) === 1 ? true : false);
+  };
+
   return (
     <div className="App">
       <header>
@@ -94,6 +101,10 @@ function App() {
             checked={border}
             onChange={(e) => setBorder(e.target.checked)}
           />
+        </div>
+        <div className="control-group">
+          <label>Randomize:</label>
+          <button onClick={randomizeAppearance}>Randomize</button>
         </div>
       </div>
 
