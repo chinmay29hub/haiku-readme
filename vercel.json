@@ -12,5 +12,12 @@
       "dest": "backend/index.js"
     }
   ],
-  "buildCommand": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend"
+  "buildCommand": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+  "git": {
+    "deploymentEnabled": {
+      "*": false,
+      "main": true
+    }
+  },
+  "ignoreCommand": "git diff --quiet HEAD^ HEAD -- frontend/ backend/"
 }
