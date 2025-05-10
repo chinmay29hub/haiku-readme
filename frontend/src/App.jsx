@@ -15,6 +15,8 @@ function App() {
     'solarized_dark',
     'gruvbox_dark',
     'cyberpunk',
+    'velvet_dusk',
+    'solar_flare'
   ];
   const types = ['vertical', 'horizontal', 'compact'];
 

@@ -39,6 +39,16 @@ const themes = {
     text: '#ff00f7',
     border: '#00fff7',
   },
+  velvet_dusk: {
+    background: '#342e37',
+    text: '#eae0d5',
+    border: '#c6a57b',
+  },
+  solar_flare: {
+    background: '#1e1a0f',
+    text: '#ffdd57',
+    border: '#ff4500',
+  }
 };
 
 function generateSvg(
