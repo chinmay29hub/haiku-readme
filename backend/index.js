@@ -3,8 +3,11 @@ const express = require('express');
 const path = require('path');
 const { generateHaiku } = require('./lib/haiku');
 const { generateSvg } = require('./lib/svg');
-
+const loggerMiddleware = require('./middleware/logging/logging.middleware');
 const app = express();
+
+//logger middleware
+app.use(loggerMiddleware);
 
 // Serve static files from frontend/dist
 app.use(express.static(path.join(__dirname, '../frontend/dist')));
