@@ -135,6 +135,76 @@ vercel
 > Update your README with your deployed URL.
 
 ---
+## 🔁 Automated Updates (Optional)
+
+The haiku SVG updates every hour using a GitHub Action.  
+This ensures fresh content and bypasses Vercel's response caching.
+
+### GitHub Action Workflow
+
+```yaml
+name: Haiku Generator
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 * * * *' # Every hour
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v3
+
+      - name: Update README with Random Haiku
+        uses: chinmay29hub/haiku-readme@v1
+```
+
+See the workflow file in [`.github/workflows/update-readme.yml`](.github/workflows/update-readme.yml).
+
+---
+## 🧪 Local Development
+
+```bash
+# Start backend
+cd backend
+npm start
+
+# Start frontend
+cd ../frontend
+npm run dev
+```
+
+Or use one command to run both:
+
+```bash
+npm run dev
+```
+
+API will be available at:  
+`http://localhost:3000/api?theme=catppuccin_mocha&type=vertical&border=true`
+
+---
+
+## ⚙️ Environment Variables
+
+Create a `.env` file in the `frontend` directory:
+
+For local dev:
+
+```
+VITE_API_URL=http://localhost:3000
+```
+
+---
+
 
 ## 🎨 Theme Previews
 
