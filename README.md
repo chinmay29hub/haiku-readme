@@ -58,6 +58,35 @@ HaikuReadme generates poetic, customizable haiku SVGs you can embed in your GitH
 
 ---
 
+## 📦 Usage
+
+Embed this in your GitHub README:
+
+```markdown
+![HaikuReadme](https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=vertical&border=true&t=1746925852)
+```
+
+### 🔧 Query Parameters
+
+| Parameter | Description    | Options                                                                 | Default            |
+|-----------|----------------|-------------------------------------------------------------------------|--------------------|
+| `theme`   | Color scheme   | `catppuccin_mocha`, `dark`, `dracula`, `nord`, `tokyo_night`, `gruvbox_dark`, `solarized_dark`, `cyberpunk` | `catppuccin_mocha` |
+| `type`    | Layout style   | `vertical`, `horizontal`, `compact`                                     | `vertical`         |
+| `border`  | Show border    | `true`, `false`                                                         | `true`             |
+
+### ✨ Examples
+
+- Dracula theme, horizontal layout, no border:
+  ```markdown
+  ![HaikuReadme](https://chinmay29hub-haiku-readme.vercel.app/api?theme=dracula&type=horizontal&border=false&t=1746925852)
+  ```
+
+- Cyberpunk theme, compact layout:
+  ```markdown
+  ![HaikuReadme](https://chinmay29hub-haiku-readme.vercel.app/api?theme=cyberpunk&type=compact&border=true&t=1746925852)
+  ```
+
+---
 ## ⚡ Quick Start
 
 Embed this in your GitHub README:
