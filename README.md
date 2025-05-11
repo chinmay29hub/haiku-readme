@@ -44,6 +44,7 @@ HaikuReadme generates poetic, customizable haiku SVGs you can embed in your GitH
 - [📄 License](#-license)
 - [👏 Acknowledgments](#-acknowledgments)
 - [✨ Contributors](#-contributors)
+-[👩‍💻Technologies Used in HaikuReadme](#-Technologies-Used-in-HaikuReadme)
 
 ---
 
@@ -240,6 +241,33 @@ Before contributing, please read our [Code of Conduct](CODE_OF_CONDUCT.md) to en
 - [Issues](https://github.com/chinmay29hub/haiku-readme/issues) – Bug reports & feature requests
 - [Discussions](https://github.com/chinmay29hub/haiku-readme/discussions) – Ideas and feedback
 - [Code of Conduct](CODE_OF_CONDUCT.md) – Be kind and inclusive
+
+---
+
+## Technologies Used in HaikuReadme
+
+## Backend
+1. **Node.js**
+   - Description: A JavaScript runtime for building scalable network applications.
+   - Documentation: [https://nodejs.org/en/docs/](https://nodejs.org/en/docs/)
+
+2. **Nodemon**
+   - Description: A tool that helps develop Node.js applications by automatically restarting the server when file changes are detected.
+   - Documentation: [https://nodemon.io/](https://nodemon.io/)
+
+---
+
+## Deployment
+1. **Vercel**
+   - Description: A platform for frontend developers to deploy websites and serverless functions.
+   - Documentation: [https://vercel.com/docs](https://vercel.com/docs)
+
+---
+
+## Build Process
+1. **npm**
+   - Description: A package manager for JavaScript that allows you to install, share, and manage dependencies.
+   - Documentation: [https://docs.npmjs.com/](https://docs.npmjs.com/)
 
 ---
 
