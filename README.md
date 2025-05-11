@@ -29,6 +29,24 @@ HaikuReadme generates poetic, customizable haiku SVGs you can embed in your GitH
 
 ---
 
+## 📑 Table of Contents
+
+- [🚀 Features](#-features)
+- [📦 Usage](#-usage)
+- [🎨 Theme Previews](#-theme-previews)
+- [🛠️ Installation & Deployment](#️-installation--deployment)
+  - [Prerequisites](#prerequisites)
+- [🔁 Automated Updates (Optional)](#-automated-updates-optional)
+- [🧪 Local Development](#-local-development)
+- [⚙️ Environment Variables](#️-environment-variables)
+- [🤝 Contributing](#-contributing)
+- [🌍 Community](#-community)
+- [📄 License](#-license)
+- [👏 Acknowledgments](#-acknowledgments)
+- [✨ Contributors](#-contributors)
+
+---
+
 ## 🚀 Features
 
 - 🎨 Customizable themes: `catppuccin_mocha`, `dracula`, `cyberpunk`, and more
@@ -40,7 +58,7 @@ HaikuReadme generates poetic, customizable haiku SVGs you can embed in your GitH
 
 ---
 
-## 📦 Usage
+## ⚡ Quick Start
 
 Embed this in your GitHub README:
 
@@ -48,81 +66,17 @@ Embed this in your GitHub README:
 ![HaikuReadme](https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=vertical&border=true&t=1746925852)
 ```
 
-### 🔧 Query Parameters
-
-| Parameter | Description    | Options                                                                 | Default            |
-|-----------|----------------|-------------------------------------------------------------------------|--------------------|
-| `theme`   | Color scheme   | `catppuccin_mocha`, `dark`, `dracula`, `nord`, `tokyo_night`, `gruvbox_dark`, `solarized_dark`, `cyberpunk` | `catppuccin_mocha` |
-| `type`    | Layout style   | `vertical`, `horizontal`, `compact`                                     | `vertical`         |
-| `border`  | Show border    | `true`, `false`                                                         | `true`             |
-
-### ✨ Examples
-
-- Dracula theme, horizontal layout, no border:
-  ```markdown
-  ![HaikuReadme](https://chinmay29hub-haiku-readme.vercel.app/api?theme=dracula&type=horizontal&border=false&t=1746925852)
-  ```
-
-- Cyberpunk theme, compact layout:
-  ```markdown
-  ![HaikuReadme](https://chinmay29hub-haiku-readme.vercel.app/api?theme=cyberpunk&type=compact&border=true&t=1746925852)
-  ```
-
----
-
-## 🎨 Theme Previews
-
-| Theme             | Preview |
-|-------------------|---------|
-| catppuccin_mocha  | ![catppuccin](https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=horizontal&border=true&t=1746925852) |
-| dracula           | ![dracula](https://chinmay29hub-haiku-readme.vercel.app/api?theme=dracula&type=horizontal&border=true&t=1746925852) |
-| cyberpunk         | ![cyberpunk](https://chinmay29hub-haiku-readme.vercel.app/api?theme=cyberpunk&type=horizontal&border=true&t=1746925852) |
-
-Explore more themes at [HaikuReadme Web](https://chinmay29hub-haiku-readme.vercel.app)
-
 ---
 
 ## 🛠️ Installation & Deployment
 
-...
+### Prerequisites
 
-## 🔁 Automated Updates (Optional)
+- Node.js (v16 or higher)
+- npm (v8 or higher)
+- Vercel CLI (for deployment)
 
-The haiku SVG updates every hour using a GitHub Action.  
-This ensures fresh content and bypasses Vercel's response caching.
-
-### GitHub Action Workflow
-
-```yaml
-name: Haiku Generator
-
-on:
-  push:
-    branches:
-      - main
-  schedule:
-    - cron: '0 * * * *' # Every hour
-  workflow_dispatch:
-
-permissions:
-  contents: write
-
-jobs:
-  update-readme:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout the code
-        uses: actions/checkout@v3
-
-      - name: Update README with Random Haiku
-        uses: chinmay29hub/haiku-readme@v1
-```
-
-See the workflow file in [`.github/workflows/update-readme.yml`](.github/workflows/update-readme.yml).
-
----
-
-## 🛠️ Installation & Deployment
+### Steps
 
 ```bash
 # Clone the repository
@@ -139,14 +93,13 @@ npm install
 cd ../frontend
 npm install
 
-# come back to root directory
+# Come back to root directory
 cd ..
 
 # Build the project
 npm run build
 
 # Deploy to Vercel
-cd ..
 vercel
 ```
 
@@ -154,38 +107,15 @@ vercel
 
 ---
 
-## 🧪 Local Development
+## 🎨 Theme Previews
 
-```bash
-# Start backend
-cd backend
-npm start
+| Theme             | Preview |
+|-------------------|---------|
+| catppuccin_mocha  | ![catppuccin](https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=horizontal&border=true&t=1746925852) |
+| dracula           | ![dracula](https://chinmay29hub-haiku-readme.vercel.app/api?theme=dracula&type=horizontal&border=true&t=1746925852) |
+| cyberpunk         | ![cyberpunk](https://chinmay29hub-haiku-readme.vercel.app/api?theme=cyberpunk&type=horizontal&border=true&t=1746925852) |
 
-# Start frontend
-cd ../frontend
-npm run dev
-```
-
-Or use one command to run both:
-
-```bash
-npm run dev
-```
-
-API will be available at:  
-`http://localhost:3000/api?theme=catppuccin_mocha&type=vertical&border=true`
-
----
-
-## ⚙️ Environment Variables
-
-Create a `.env` file in the `frontend` directory:
-
-For local dev:
-
-```
-VITE_API_URL=http://localhost:3000
-```
+Explore more themes at [HaikuReadme Web](https://chinmay29hub-haiku-readme.vercel.app)
 
 ---
 
@@ -201,13 +131,6 @@ We welcome contributions from everyone! Check out the [CONTRIBUTING.md](CONTRIBU
 - Refactor backend or add tests
 
 Before contributing, please read our [Code of Conduct](CODE_OF_CONDUCT.md) to ensure a respectful community experience.
-
-
-### 💡 Contribution Ideas
-
-- Add more themes/layouts
-- New word sets or seasonal haikus
-- Improve UI/UX (toggle dark/light, animations, etc.)
 
 ---
 
