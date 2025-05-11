@@ -86,6 +86,18 @@ Embed this in your GitHub README:
   ![HaikuReadme](https://chinmay29hub-haiku-readme.vercel.app/api?theme=cyberpunk&type=compact&border=true&t=1746925852)
   ```
 
+## 🎨 Theme Previews
+
+| Theme             | Preview |
+|-------------------|---------|
+| catppuccin_mocha  | ![catppuccin](https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=horizontal&border=true&t=1746925852) |
+| dracula           | ![dracula](https://chinmay29hub-haiku-readme.vercel.app/api?theme=dracula&type=horizontal&border=true&t=1746925852) |
+| cyberpunk         | ![cyberpunk](https://chinmay29hub-haiku-readme.vercel.app/api?theme=cyberpunk&type=horizontal&border=true&t=1746925852) |
+
+Explore more themes at [HaikuReadme Web](https://chinmay29hub-haiku-readme.vercel.app)
+
+---
+
 ---
 ## ⚡ Quick Start
 
@@ -206,17 +218,7 @@ VITE_API_URL=http://localhost:3000
 ---
 
 
-## 🎨 Theme Previews
 
-| Theme             | Preview |
-|-------------------|---------|
-| catppuccin_mocha  | ![catppuccin](https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=horizontal&border=true&t=1746925852) |
-| dracula           | ![dracula](https://chinmay29hub-haiku-readme.vercel.app/api?theme=dracula&type=horizontal&border=true&t=1746925852) |
-| cyberpunk         | ![cyberpunk](https://chinmay29hub-haiku-readme.vercel.app/api?theme=cyberpunk&type=horizontal&border=true&t=1746925852) |
-
-Explore more themes at [HaikuReadme Web](https://chinmay29hub-haiku-readme.vercel.app)
-
----
 
 ## 🤝 Contributing
 
