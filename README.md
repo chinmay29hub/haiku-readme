@@ -44,7 +44,7 @@ HaikuReadme generates poetic, customizable haiku SVGs you can embed in your GitH
 - [📄 License](#-license)
 - [👏 Acknowledgments](#-acknowledgments)
 - [✨ Contributors](#-contributors)
--[👩‍💻Technologies Used in HaikuReadme](#-Technologies-Used-in-HaikuReadme)
+- [👩‍💻Technologies Used in HaikuReadme](#-Technologies-Used-in-HaikuReadme)
 
 ---
 
