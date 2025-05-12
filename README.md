@@ -320,6 +320,7 @@ Licensed under the [MIT License](LICENSE).
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/features/security"><img src="https://avatars.githubusercontent.com/u/27347476?v=4?s=100" width="100px;" alt="Dependabot"/><br /><sub><b>Dependabot</b></sub></a><br /><a href="#security-dependabot" title="Security">🛡️</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://chinmay29hub-portfolio.netlify.app/"><img src="https://avatars.githubusercontent.com/u/69494946?v=4?s=100" width="100px;" alt="Chinmay Sonawane"/><br /><sub><b>Chinmay Sonawane</b></sub></a><br /><a href="#code-chinmay29hub" title="Code">💻</a> <a href="#maintenance-chinmay29hub" title="Maintenance">🚧</a> <a href="#mentoring-chinmay29hub" title="Mentoring">🧑‍🏫</a> <a href="#plugin-chinmay29hub" title="Plugin/utility libraries">🔌</a> <a href="#projectManagement-chinmay29hub" title="Project Management">📆</a> <a href="#tool-chinmay29hub" title="Tools">🔧</a> <a href="#infra-chinmay29hub" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#design-chinmay29hub" title="Design">🎨</a> <a href="#doc-chinmay29hub" title="Documentation">📖</a> <a href="#bug-chinmay29hub" title="Bug reports">🐛</a></td>
     </tr>
   </tbody>
 </table>
