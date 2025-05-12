@@ -16,6 +16,16 @@
       "contributions": [
         "security"
       ]
+    },
+    {
+      "login": "colinfrerichs",
+      "name": "Colin Frerichs",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9201416?v=4",
+      "profile": "https://github.com/colinfrerichs",
+      "contributions": [
+        "code",
+        "design"
+      ]
     }
   ]
 }
