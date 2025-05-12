@@ -320,6 +320,7 @@ Licensed under the [MIT License](LICENSE).
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/features/security"><img src="https://avatars.githubusercontent.com/u/27347476?v=4?s=100" width="100px;" alt="Dependabot"/><br /><sub><b>Dependabot</b></sub></a><br /><a href="#security-dependabot" title="Security">🛡️</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/ukihunter"><img src="https://avatars.githubusercontent.com/u/70638588?v=4?s=100" width="100px;" alt="UKI "/><br /><sub><b>UKI </b></sub></a><br /><a href="#doc-ukihunter" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
