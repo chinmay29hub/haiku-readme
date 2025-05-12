@@ -56,7 +56,7 @@ HaikuReadme generates poetic, customizable haiku SVGs you can embed in your GitH
   - [Build Process](#build-process)
   - [📄 License](#-license)
   - [👏 Acknowledgments](#-acknowledgments)
-  - [✨ Contributors](#-contributors)
+  - [Contributors](#contributors)
 
 ---
 
@@ -311,13 +311,24 @@ Licensed under the [MIT License](LICENSE).
 
 ---
 
-## ✨ Contributors
+<!-- ## ✨ Contributors
 
 Thanks to everyone who contributes!
 
 <a href="https://github.com/chinmay29hub/haiku-readme/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=chinmay29hub/haiku-readme" alt="Contributors" />
-</a>
+</a> -->
+
+## Contributors
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 ---
 
