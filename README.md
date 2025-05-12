@@ -311,14 +311,6 @@ Licensed under the [MIT License](LICENSE).
 
 ---
 
-<!-- ## ✨ Contributors
-
-Thanks to everyone who contributes!
-
-<a href="https://github.com/chinmay29hub/haiku-readme/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=chinmay29hub/haiku-readme" alt="Contributors" />
-</a> -->
-
 ## Contributors
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
