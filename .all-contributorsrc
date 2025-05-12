@@ -1,4 +1,21 @@
 {
   "projectName": "haiku-readme",
-  "projectOwner": "chinmay29hub"
+  "projectOwner": "chinmay29hub",
+  "files": [
+    "README.md"
+  ],
+  "commitType": "docs",
+  "commitConvention": "angular",
+  "contributorsPerLine": 7,
+  "contributors": [
+    {
+      "login": "dependabot",
+      "name": "Dependabot",
+      "avatar_url": "https://avatars.githubusercontent.com/u/27347476?v=4",
+      "profile": "https://github.com/features/security",
+      "contributions": [
+        "security"
+      ]
+    }
+  ]
 }
