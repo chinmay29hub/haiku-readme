@@ -112,8 +112,6 @@ Explore more themes at [HaikuReadme Web](https://chinmay29hub-haiku-readme.verce
 
 ---
 
----
-
 ## ⚡ Quick Start
 
 Embed this in your GitHub README:
