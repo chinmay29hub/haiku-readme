@@ -333,6 +333,7 @@ Thanks goes to these wonderful people:
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/svj96"><img src="https://avatars.githubusercontent.com/u/167889409?v=4?s=100" width="100px;" alt="svj96"/><br /><sub><b>svj96</b></sub></a><br /><a href="https://github.com/chinmay29hub/haiku-readme/commits?author=svj96" title="Code">💻</a> <a href="#ideas-svj96" title="Ideas, Planning, & Feedback">🤔</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/pr4j3sh"><img src="https://avatars.githubusercontent.com/u/75523737?v=4?s=100" width="100px;" alt="jesh"/><br /><sub><b>jesh</b></sub></a><br /><a href="https://github.com/chinmay29hub/haiku-readme/commits?author=pr4j3sh" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Binita-Sharma"><img src="https://avatars.githubusercontent.com/u/154619063?v=4?s=100" width="100px;" alt="Binita Sharma"/><br /><sub><b>Binita Sharma</b></sub></a><br /><a href="https://github.com/chinmay29hub/haiku-readme/commits?author=Binita-Sharma" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://allcontributors.org/"><img src="https://avatars.githubusercontent.com/u/46410174?v=4?s=100" width="100px;" alt="All Contributors"/><br /><sub><b>All Contributors</b></sub></a><br /><a href="https://github.com/chinmay29hub/haiku-readme/commits?author=all-contributors" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
