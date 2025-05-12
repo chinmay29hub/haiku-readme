@@ -32,7 +32,10 @@
         "infra",
         "design",
         "doc",
-        "bug"
+        "bug",
+        "review",
+        "test",
+        "ideas"
       ]
     }
   ]
