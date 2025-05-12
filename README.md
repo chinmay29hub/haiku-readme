@@ -56,7 +56,7 @@ HaikuReadme generates poetic, customizable haiku SVGs you can embed in your GitH
   - [Build Process](#build-process)
   - [📄 License](#-license)
   - [👏 Acknowledgments](#-acknowledgments)
-  - [✨ Contributors](#-contributors)
+  - [Contributors ✨](#contributors-)
 
 ---
 
@@ -311,19 +311,33 @@ Licensed under the [MIT License](LICENSE).
 
 ---
 
-## ✨ Contributors
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://chinmay29hub-portfolio.netlify.app/"><img src="https://avatars.githubusercontent.com/u/69494946?v=4?s=100" width="100px;" alt="Chinmay Sonawane"/><br /><sub><b>Chinmay Sonawane</b></sub></a><br /><a href="https://github.com/chinmay29hub/haiku-readme/commits?author=chinmay29hub" title="Code">💻</a> <a href="#maintenance-chinmay29hub" title="Maintenance">🚧</a> <a href="#projectManagement-chinmay29hub" title="Project Management">📆</a> <a href="https://github.com/chinmay29hub/haiku-readme/pulls?q=is%3Apr+reviewed-by%3Achinmay29hub" title="Reviewed Pull Requests">👀</a> <a href="https://github.com/chinmay29hub/haiku-readme/commits?author=chinmay29hub" title="Tests">⚠️</a> <a href="https://github.com/chinmay29hub/haiku-readme/commits?author=chinmay29hub" title="Documentation">📖</a> <a href="#ideas-chinmay29hub" title="Ideas, Planning, & Feedback">🤔</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/actions"><img src="https://avatars.githubusercontent.com/u/65916846?v=4?s=100" width="100px;" alt="actions-user"/><br /><sub><b>actions-user</b></sub></a><br /><a href="https://github.com/chinmay29hub/haiku-readme/commits?author=actions-user" title="Code">💻</a> <a href="#maintenance-actions-user" title="Maintenance">🚧</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/ukihunter"><img src="https://avatars.githubusercontent.com/u/70638588?v=4?s=100" width="100px;" alt="UKI "/><br /><sub><b>UKI </b></sub></a><br /><a href="https://github.com/chinmay29hub/haiku-readme/commits?author=ukihunter" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/rajanarahul93"><img src="https://avatars.githubusercontent.com/u/123227543?v=4?s=100" width="100px;" alt="Vara Rahul Rajana"/><br /><sub><b>Vara Rahul Rajana</b></sub></a><br /><a href="https://github.com/chinmay29hub/haiku-readme/commits?author=rajanarahul93" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/bietkhonhungvandi212"><img src="https://avatars.githubusercontent.com/u/210964680?v=4?s=100" width="100px;" alt="Tuan Nguyen"/><br /><sub><b>Tuan Nguyen</b></sub></a><br /><a href="https://github.com/chinmay29hub/haiku-readme/commits?author=bietkhonhungvandi212" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/colinfrerichs"><img src="https://avatars.githubusercontent.com/u/9201416?v=4?s=100" width="100px;" alt="Colin Frerichs"/><br /><sub><b>Colin Frerichs</b></sub></a><br /><a href="https://github.com/chinmay29hub/haiku-readme/commits?author=colinfrerichs" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/miguelro20"><img src="https://avatars.githubusercontent.com/u/193288551?v=4?s=100" width="100px;" alt="miguelro20"/><br /><sub><b>miguelro20</b></sub></a><br /><a href="https://github.com/chinmay29hub/haiku-readme/commits?author=miguelro20" title="Code">💻</a></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/svj96"><img src="https://avatars.githubusercontent.com/u/167889409?v=4?s=100" width="100px;" alt="svj96"/><br /><sub><b>svj96</b></sub></a><br /><a href="https://github.com/chinmay29hub/haiku-readme/commits?author=svj96" title="Code">💻</a> <a href="#ideas-svj96" title="Ideas, Planning, & Feedback">🤔</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/pr4j3sh"><img src="https://avatars.githubusercontent.com/u/75523737?v=4?s=100" width="100px;" alt="jesh"/><br /><sub><b>jesh</b></sub></a><br /><a href="https://github.com/chinmay29hub/haiku-readme/commits?author=pr4j3sh" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Binita-Sharma"><img src="https://avatars.githubusercontent.com/u/154619063?v=4?s=100" width="100px;" alt="Binita Sharma"/><br /><sub><b>Binita Sharma</b></sub></a><br /><a href="https://github.com/chinmay29hub/haiku-readme/commits?author=Binita-Sharma" title="Code">💻</a></td>
+    </tr>
+  </tbody>
+</table>
 
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-
----
-
-<p align="center">
-  Made with 💻 and ☕ by <a href="https://github.com/chinmay29hub">Chinmay Sonawane</a>
-</p>
