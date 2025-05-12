@@ -9,15 +9,6 @@
   "contributorsPerLine": 7,
   "contributors": [
     {
-      "login": "dependabot",
-      "name": "Dependabot",
-      "avatar_url": "https://avatars.githubusercontent.com/u/27347476?v=4",
-      "profile": "https://github.com/features/security",
-      "contributions": [
-        "security"
-      ]
-    },
-    {
       "login": "chinmay29hub",
       "name": "Chinmay Sonawane",
       "avatar_url": "https://avatars.githubusercontent.com/u/69494946?v=4",
@@ -33,6 +24,15 @@
         "design",
         "doc",
         "bug"
+      ]
+    },
+    {
+      "login": "dependabot",
+      "name": "Dependabot",
+      "avatar_url": "https://avatars.githubusercontent.com/u/27347476?v=4",
+      "profile": "https://github.com/features/security",
+      "contributions": [
+        "security"
       ]
     }
   ]
