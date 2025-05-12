@@ -5,10 +5,15 @@
   "scripts": {
     "dev": "nodemon ./backend/index.js",
     "start": "vercel dev",
-    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend"
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "format": "prettier --write .",
+    "format:check": "prettier . --check"
   },
   "devDependencies": {
     "vercel": "^28.0.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "prettier": "^3.5.3"
+  }
 }

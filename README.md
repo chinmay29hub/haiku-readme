@@ -31,20 +31,32 @@ HaikuReadme generates poetic, customizable haiku SVGs you can embed in your GitH
 
 ## 📑 Table of Contents
 
-- [🚀 Features](#-features)
-- [📦 Usage](#-usage)
-- [🎨 Theme Previews](#-theme-previews)
-- [🛠️ Installation & Deployment](#️-installation--deployment)
-  - [Prerequisites](#prerequisites)
-- [🔁 Automated Updates (Optional)](#-automated-updates-optional)
-- [🧪 Local Development](#-local-development)
-- [⚙️ Environment Variables](#️-environment-variables)
-- [🤝 Contributing](#-contributing)
-- [🌍 Community](#-community)
-- [📄 License](#-license)
-- [👏 Acknowledgments](#-acknowledgments)
-- [✨ Contributors](#-contributors)
-- [👩‍💻Technologies Used in HaikuReadme](#-Technologies-Used-in-HaikuReadme)
+- [HaikuReadme](#haikureadme)
+  - [📑 Table of Contents](#-table-of-contents)
+  - [🚀 Features](#-features)
+  - [📦 Usage](#-usage)
+    - [🔧 Query Parameters](#-query-parameters)
+    - [✨ Examples](#-examples)
+  - [🎨 Theme Previews](#-theme-previews)
+  - [⚡ Quick Start](#-quick-start)
+  - [🛠️ Installation \& Deployment](#️-installation--deployment)
+    - [Prerequisites](#prerequisites)
+    - [Steps](#steps)
+  - [🔁 Automated Updates (Optional)](#-automated-updates-optional)
+    - [GitHub Action Workflow](#github-action-workflow)
+  - [🧪 Local Development](#-local-development)
+  - [⚙️ Environment Variables](#️-environment-variables)
+  - [🤝 Contributing](#-contributing)
+    - [💡 Contribution Ideas](#-contribution-ideas)
+  - [🌍 Community](#-community)
+  - [Technologies Used in HaikuReadme](#technologies-used-in-haikureadme)
+  - [Frontend](#frontend)
+  - [Backend](#backend)
+  - [Deployment](#deployment)
+  - [Build Process](#build-process)
+  - [📄 License](#-license)
+  - [👏 Acknowledgments](#-acknowledgments)
+  - [✨ Contributors](#-contributors)
 
 ---
 
@@ -69,15 +81,16 @@ Embed this in your GitHub README:
 
 ### 🔧 Query Parameters
 
-| Parameter | Description    | Options                                                                 | Default            |
-|-----------|----------------|-------------------------------------------------------------------------|--------------------|
-| `theme`   | Color scheme   | `catppuccin_mocha`, `dark`, `dracula`, `nord`, `tokyo_night`, `gruvbox_dark`, `solarized_dark`, `cyberpunk` | `catppuccin_mocha` |
-| `type`    | Layout style   | `vertical`, `horizontal`, `compact`                                     | `vertical`         |
-| `border`  | Show border    | `true`, `false`                                                         | `true`             |
+| Parameter | Description  | Options                                                                                                     | Default            |
+| --------- | ------------ | ----------------------------------------------------------------------------------------------------------- | ------------------ |
+| `theme`   | Color scheme | `catppuccin_mocha`, `dark`, `dracula`, `nord`, `tokyo_night`, `gruvbox_dark`, `solarized_dark`, `cyberpunk` | `catppuccin_mocha` |
+| `type`    | Layout style | `vertical`, `horizontal`, `compact`                                                                         | `vertical`         |
+| `border`  | Show border  | `true`, `false`                                                                                             | `true`             |
 
 ### ✨ Examples
 
 - Dracula theme, horizontal layout, no border:
+
   ```markdown
   ![HaikuReadme](https://chinmay29hub-haiku-readme.vercel.app/api?theme=dracula&type=horizontal&border=false&t=1747012150)
   ```
@@ -89,17 +102,18 @@ Embed this in your GitHub README:
 
 ## 🎨 Theme Previews
 
-| Theme             | Preview |
-|-------------------|---------|
-| catppuccin_mocha  | ![catppuccin](https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=horizontal&border=true&t=1747012150) |
-| dracula           | ![dracula](https://chinmay29hub-haiku-readme.vercel.app/api?theme=dracula&type=horizontal&border=true&t=1747012150) |
-| cyberpunk         | ![cyberpunk](https://chinmay29hub-haiku-readme.vercel.app/api?theme=cyberpunk&type=horizontal&border=true&t=1747012150) |
+| Theme            | Preview                                                                                                                         |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| catppuccin_mocha | ![catppuccin](https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=horizontal&border=true&t=1747012150) |
+| dracula          | ![dracula](https://chinmay29hub-haiku-readme.vercel.app/api?theme=dracula&type=horizontal&border=true&t=1747012150)             |
+| cyberpunk        | ![cyberpunk](https://chinmay29hub-haiku-readme.vercel.app/api?theme=cyberpunk&type=horizontal&border=true&t=1747012150)         |
 
 Explore more themes at [HaikuReadme Web](https://chinmay29hub-haiku-readme.vercel.app)
 
 ---
 
 ---
+
 ## ⚡ Quick Start
 
 Embed this in your GitHub README:
@@ -148,6 +162,7 @@ vercel
 > Update your README with your deployed URL.
 
 ---
+
 ## 🔁 Automated Updates (Optional)
 
 The haiku SVG updates every hour using a GitHub Action.  
@@ -163,7 +178,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: '0 * * * *' # Every hour
+    - cron: "0 * * * *" # Every hour
   workflow_dispatch:
 
 permissions:
@@ -183,6 +198,7 @@ jobs:
 See the workflow file in [`.github/workflows/update-readme.yml`](.github/workflows/update-readme.yml).
 
 ---
+
 ## 🧪 Local Development
 
 ```bash
@@ -218,18 +234,15 @@ VITE_API_URL=http://localhost:3000
 
 ---
 
-
-
-
 ## 🤝 Contributing
 
 We welcome contributions from everyone! Check out the [CONTRIBUTING.md](CONTRIBUTING.md) to get started.
 
 ### 💡 Contribution Ideas
 
-- Add new themes or layouts  
-- Expand word sets and haiku templates  
-- Improve UI/UX (animations, responsiveness, accessibility)  
+- Add new themes or layouts
+- Expand word sets and haiku templates
+- Improve UI/UX (animations, responsiveness, accessibility)
 - Refactor backend or add tests
 
 Before contributing, please read our [Code of Conduct](CODE_OF_CONDUCT.md) to ensure a respectful community experience.
@@ -246,8 +259,21 @@ Before contributing, please read our [Code of Conduct](CODE_OF_CONDUCT.md) to en
 
 ## Technologies Used in HaikuReadme
 
+## Frontend
+
+1. **React**
+
+   - Description: A JavaScript library for building user interfaces using components.
+   - Documentation: [https://react.dev/](https://react.dev/)
+
+2. **Vite**
+   - Description: A modern frontend build tool that provides fast development and optimized builds.
+   - Documentation: [https://vitejs.dev/](https://vitejs.dev/)
+
 ## Backend
+
 1. **Node.js**
+
    - Description: A JavaScript runtime for building scalable network applications.
    - Documentation: [https://nodejs.org/en/docs/](https://nodejs.org/en/docs/)
 
@@ -258,6 +284,7 @@ Before contributing, please read our [Code of Conduct](CODE_OF_CONDUCT.md) to en
 ---
 
 ## Deployment
+
 1. **Vercel**
    - Description: A platform for frontend developers to deploy websites and serverless functions.
    - Documentation: [https://vercel.com/docs](https://vercel.com/docs)
@@ -265,6 +292,7 @@ Before contributing, please read our [Code of Conduct](CODE_OF_CONDUCT.md) to en
 ---
 
 ## Build Process
+
 1. **npm**
    - Description: A package manager for JavaScript that allows you to install, share, and manage dependencies.
    - Documentation: [https://docs.npmjs.com/](https://docs.npmjs.com/)
