@@ -16,6 +16,24 @@
       "contributions": [
         "security"
       ]
+    },
+    {
+      "login": "chinmay29hub",
+      "name": "Chinmay Sonawane",
+      "avatar_url": "https://avatars.githubusercontent.com/u/69494946?v=4",
+      "profile": "https://chinmay29hub-portfolio.netlify.app/",
+      "contributions": [
+        "code",
+        "maintenance",
+        "mentoring",
+        "plugin",
+        "projectManagement",
+        "tool",
+        "infra",
+        "design",
+        "doc",
+        "bug"
+      ]
     }
   ]
 }
