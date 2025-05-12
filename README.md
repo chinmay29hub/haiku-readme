@@ -316,6 +316,13 @@ Licensed under the [MIT License](LICENSE).
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://chinmay29hub-portfolio.netlify.app/"><img src="https://avatars.githubusercontent.com/u/69494946?v=4?s=100" width="100px;" alt="Chinmay Sonawane"/><br /><sub><b>Chinmay Sonawane</b></sub></a><br /><a href="#code-chinmay29hub" title="Code">💻</a> <a href="#maintenance-chinmay29hub" title="Maintenance">🚧</a> <a href="#projectManagement-chinmay29hub" title="Project Management">📆</a> <a href="#review-chinmay29hub" title="Reviewed Pull Requests">👀</a> <a href="#test-chinmay29hub" title="Tests">⚠️</a> <a href="#doc-chinmay29hub" title="Documentation">📖</a> <a href="#ideas-chinmay29hub" title="Ideas, Planning, & Feedback">🤔</a></td>
+    </tr>
+  </tbody>
+</table>
 
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
