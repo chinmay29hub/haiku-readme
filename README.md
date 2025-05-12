@@ -29,6 +29,25 @@ HaikuReadme generates poetic, customizable haiku SVGs you can embed in your GitH
 
 ---
 
+## 📑 Table of Contents
+
+- [🚀 Features](#-features)
+- [📦 Usage](#-usage)
+- [🎨 Theme Previews](#-theme-previews)
+- [🛠️ Installation & Deployment](#️-installation--deployment)
+  - [Prerequisites](#prerequisites)
+- [🔁 Automated Updates (Optional)](#-automated-updates-optional)
+- [🧪 Local Development](#-local-development)
+- [⚙️ Environment Variables](#️-environment-variables)
+- [🤝 Contributing](#-contributing)
+- [🌍 Community](#-community)
+- [📄 License](#-license)
+- [👏 Acknowledgments](#-acknowledgments)
+- [✨ Contributors](#-contributors)
+- [👩‍💻Technologies Used in HaikuReadme](#-Technologies-Used-in-HaikuReadme)
+
+---
+
 ## 🚀 Features
 
 - 🎨 Customizable themes: `catppuccin_mocha`, `dracula`, `cyberpunk`, and more
@@ -68,8 +87,6 @@ Embed this in your GitHub README:
   ![HaikuReadme](https://chinmay29hub-haiku-readme.vercel.app/api?theme=cyberpunk&type=compact&border=true&t=1747012150)
   ```
 
----
-
 ## 🎨 Theme Previews
 
 | Theme             | Preview |
@@ -82,10 +99,55 @@ Explore more themes at [HaikuReadme Web](https://chinmay29hub-haiku-readme.verce
 
 ---
 
+---
+## ⚡ Quick Start
+
+Embed this in your GitHub README:
+
+```markdown
+![HaikuReadme](https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=vertical&border=true&t=1746925852)
+```
+
+---
+
 ## 🛠️ Installation & Deployment
 
-...
+### Prerequisites
 
+- Node.js (v16 or higher)
+- npm (v8 or higher)
+- Vercel CLI (for deployment)
+
+### Steps
+
+```bash
+# Clone the repository
+git clone https://github.com/chinmay29hub/haiku-readme.git
+
+# Navigate to project
+cd haiku-readme
+
+# Install backend dependencies
+cd backend
+npm install
+
+# Install frontend dependencies
+cd ../frontend
+npm install
+
+# Come back to root directory
+cd ..
+
+# Build the project
+npm run build
+
+# Deploy to Vercel
+vercel
+```
+
+> Update your README with your deployed URL.
+
+---
 ## 🔁 Automated Updates (Optional)
 
 The haiku SVG updates every hour using a GitHub Action.  
@@ -121,39 +183,6 @@ jobs:
 See the workflow file in [`.github/workflows/update-readme.yml`](.github/workflows/update-readme.yml).
 
 ---
-
-## 🛠️ Installation & Deployment
-
-```bash
-# Clone the repository
-git clone https://github.com/chinmay29hub/haiku-readme.git
-
-# Navigate to project
-cd haiku-readme
-
-# Install backend dependencies
-cd backend
-npm install
-
-# Install frontend dependencies
-cd ../frontend
-npm install
-
-# come back to root directory
-cd ..
-
-# Build the project
-npm run build
-
-# Deploy to Vercel
-cd ..
-vercel
-```
-
-> Update your README with your deployed URL.
-
----
-
 ## 🧪 Local Development
 
 ```bash
@@ -189,6 +218,9 @@ VITE_API_URL=http://localhost:3000
 
 ---
 
+
+
+
 ## 🤝 Contributing
 
 We welcome contributions from everyone! Check out the [CONTRIBUTING.md](CONTRIBUTING.md) to get started.
@@ -202,13 +234,6 @@ We welcome contributions from everyone! Check out the [CONTRIBUTING.md](CONTRIBU
 
 Before contributing, please read our [Code of Conduct](CODE_OF_CONDUCT.md) to ensure a respectful community experience.
 
-
-### 💡 Contribution Ideas
-
-- Add more themes/layouts
-- New word sets or seasonal haikus
-- Improve UI/UX (toggle dark/light, animations, etc.)
-
 ---
 
 ## 🌍 Community
@@ -216,6 +241,33 @@ Before contributing, please read our [Code of Conduct](CODE_OF_CONDUCT.md) to en
 - [Issues](https://github.com/chinmay29hub/haiku-readme/issues) – Bug reports & feature requests
 - [Discussions](https://github.com/chinmay29hub/haiku-readme/discussions) – Ideas and feedback
 - [Code of Conduct](CODE_OF_CONDUCT.md) – Be kind and inclusive
+
+---
+
+## Technologies Used in HaikuReadme
+
+## Backend
+1. **Node.js**
+   - Description: A JavaScript runtime for building scalable network applications.
+   - Documentation: [https://nodejs.org/en/docs/](https://nodejs.org/en/docs/)
+
+2. **Nodemon**
+   - Description: A tool that helps develop Node.js applications by automatically restarting the server when file changes are detected.
+   - Documentation: [https://nodemon.io/](https://nodemon.io/)
+
+---
+
+## Deployment
+1. **Vercel**
+   - Description: A platform for frontend developers to deploy websites and serverless functions.
+   - Documentation: [https://vercel.com/docs](https://vercel.com/docs)
+
+---
+
+## Build Process
+1. **npm**
+   - Description: A package manager for JavaScript that allows you to install, share, and manage dependencies.
+   - Documentation: [https://docs.npmjs.com/](https://docs.npmjs.com/)
 
 ---
 
