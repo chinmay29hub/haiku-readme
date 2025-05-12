@@ -320,6 +320,7 @@ Licensed under the [MIT License](LICENSE).
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/features/security"><img src="https://avatars.githubusercontent.com/u/27347476?v=4?s=100" width="100px;" alt="Dependabot"/><br /><sub><b>Dependabot</b></sub></a><br /><a href="#security-dependabot" title="Security">🛡️</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/miguelro20"><img src="https://avatars.githubusercontent.com/u/193288551?v=4?s=100" width="100px;" alt="miguelro20"/><br /><sub><b>miguelro20</b></sub></a><br /><a href="#doc-miguelro20" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
