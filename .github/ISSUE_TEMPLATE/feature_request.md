@@ -1,7 +1,7 @@
 ---
 name: ✨ Feature Request
 about: Suggest a new feature for HaikuReadme
-title: "[FEATURE] "
+title: '[FEATURE] '
 labels: enhancement, good first issue
 assignees: ''
 ---
@@ -11,7 +11,8 @@ assignees: ''
 ## 💡 Describe the Feature
 
 What new feature do you propose?  
-**Example:**  
+**Example:**
+
 > "Add a button to download the SVG haiku as a PNG."
 
 ---
@@ -19,7 +20,8 @@ What new feature do you propose?
 ## 🤔 Why Is This Needed?
 
 How will it improve HaikuReadme?  
-**Example:**  
+**Example:**
+
 > "Users can save haikus as images for social media sharing."
 
 ---
@@ -27,7 +29,8 @@ How will it improve HaikuReadme?
 ## 🛠️ Proposed Solution
 
 How could this be implemented?  
-**Example:**  
+**Example:**
+
 - Add a `downloadPNG` function in `frontend/src/App.jsx`.
 - Use `html2canvas` to convert SVG to PNG.
 - Update `backend/index.js` for PNG output at `/api?theme=dracula&format=png`.
@@ -37,7 +40,8 @@ How could this be implemented?
 ## 🔁 Alternatives Considered
 
 Any other ways you thought about doing this?  
-**Example:**  
+**Example:**
+
 > "Could use canvas directly, but `html2canvas` is simpler and well-supported."
 
 ---
@@ -52,7 +56,8 @@ Add sketches, mockups, or links to explain your vision.
 ## 📎 Additional Context
 
 Any other notes, links, or thoughts?  
-**Example:**  
+**Example:**
+
 > "Inspired by user feedback requesting downloadable haikus."
 
 ---

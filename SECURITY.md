@@ -5,7 +5,7 @@
 The following versions of **HaikuReadme** are currently supported with security updates:
 
 | Version | Supported |
-|---------|-----------|
+| ------- | --------- |
 | `main`  | ✅        |
 | older   | ❌        |
 

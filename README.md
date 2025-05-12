@@ -178,7 +178,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: "0 * * * *" # Every hour
+    - cron: '0 * * * *' # Every hour
   workflow_dispatch:
 
 permissions:
