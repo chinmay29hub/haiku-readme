@@ -1,7 +1,7 @@
 ---
 name: 🐞 Bug Report
 about: Report a bug to improve HaikuReadme
-title: "[BUG] "
+title: '[BUG] '
 labels: bug, good first issue
 assignees: ''
 ---
@@ -11,7 +11,8 @@ assignees: ''
 ## 📋 Describe the Bug
 
 A clear description of the bug.  
-**Example:**  
+**Example:**
+
 > "The theme selector in the frontend doesn’t update the SVG when choosing Monokai."
 
 ---
@@ -28,7 +29,8 @@ A clear description of the bug.
 ## ✅ Expected Behavior
 
 What should happen?  
-**Example:**  
+**Example:**
+
 > "The SVG should show Monokai’s dark background (`#272822`) and bright text (`#f8f8f2`)."
 
 ---
@@ -36,7 +38,8 @@ What should happen?
 ## ❌ Actual Behavior
 
 What actually happens?  
-**Example:**  
+**Example:**
+
 > "The SVG remains in Dracula theme colors."
 
 ---
@@ -62,7 +65,8 @@ If applicable, add screenshots to help explain the issue.
 ## 💬 Additional Context
 
 Any other helpful context?  
-**Example:**  
+**Example:**
+
 > "Bug occurs after switching themes multiple times."
 
 ---
@@ -70,7 +74,8 @@ Any other helpful context?
 ## 🧠 Possible Solution (Optional)
 
 Suggest a fix if you have one.  
-**Example:**  
+**Example:**
+
 > "Check `App.jsx` for theme state handling issues."
 
 ---

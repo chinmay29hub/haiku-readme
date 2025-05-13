@@ -1,0 +1,100 @@
+{
+  "projectName": "haiku-readme",
+  "projectOwner": "chinmay29hub",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": ["README.md"],
+  "imageSize": 100,
+  "commit": false,
+  "commitConvention": "gitmoji",
+  "contributors": [
+    {
+      "login": "chinmay29hub",
+      "name": "Chinmay Sonawane",
+      "avatar_url": "https://avatars.githubusercontent.com/u/69494946?v=4",
+      "profile": "https://chinmay29hub-portfolio.netlify.app/",
+      "contributions": [
+        "code",
+        "maintenance",
+        "projectManagement",
+        "review",
+        "test",
+        "doc",
+        "ideas"
+      ]
+    },
+    {
+      "login": "actions-user",
+      "name": "actions-user",
+      "avatar_url": "https://avatars.githubusercontent.com/u/65916846?v=4",
+      "profile": "https://github.com/actions",
+      "contributions": ["code", "maintenance"]
+    },
+    {
+      "login": "ukihunter",
+      "name": "UKI ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/70638588?v=4",
+      "profile": "https://github.com/ukihunter",
+      "contributions": ["doc"]
+    },
+    {
+      "login": "rajanarahul93",
+      "name": "Vara Rahul Rajana",
+      "avatar_url": "https://avatars.githubusercontent.com/u/123227543?v=4",
+      "profile": "https://github.com/rajanarahul93",
+      "contributions": ["code"]
+    },
+    {
+      "login": "bietkhonhungvandi212",
+      "name": "Tuan Nguyen",
+      "avatar_url": "https://avatars.githubusercontent.com/u/210964680?v=4",
+      "profile": "https://github.com/bietkhonhungvandi212",
+      "contributions": ["code"]
+    },
+    {
+      "login": "colinfrerichs",
+      "name": "Colin Frerichs",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9201416?v=4",
+      "profile": "https://github.com/colinfrerichs",
+      "contributions": ["code"]
+    },
+    {
+      "login": "miguelro20",
+      "name": "miguelro20",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193288551?v=4",
+      "profile": "https://github.com/miguelro20",
+      "contributions": ["code"]
+    },
+    {
+      "login": "svj96",
+      "name": "svj96",
+      "avatar_url": "https://avatars.githubusercontent.com/u/167889409?v=4",
+      "profile": "https://github.com/svj96",
+      "contributions": ["code", "ideas"]
+    },
+    {
+      "login": "pr4j3sh",
+      "name": "jesh",
+      "avatar_url": "https://avatars.githubusercontent.com/u/75523737?v=4",
+      "profile": "https://github.com/pr4j3sh",
+      "contributions": ["code"]
+    },
+    {
+      "login": "Binita-Sharma",
+      "name": "Binita Sharma",
+      "avatar_url": "https://avatars.githubusercontent.com/u/154619063?v=4",
+      "profile": "https://github.com/Binita-Sharma",
+      "contributions": ["code"]
+    },
+    {
+      "login": "all-contributors",
+      "name": "All Contributors",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46410174?v=4",
+      "profile": "https://allcontributors.org/",
+      "contributions": ["doc"]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "linkToUsage": false
+}
+

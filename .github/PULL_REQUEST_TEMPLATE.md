@@ -2,7 +2,7 @@
 
 Hey there, contributor! 🎉 Thanks for helping make **HaikuReadme** better!  
 This template helps us understand your changes and keeps things organized.  
-Please fill out the sections below, check the relevant boxes, and delete any sections that don’t apply.  
+Please fill out the sections below, check the relevant boxes, and delete any sections that don’t apply.
 
 Let’s make some poetic code! 📜
 
@@ -10,7 +10,7 @@ Let’s make some poetic code! 📜
 
 ## 🧩 Related Issue
 
-**Issue Number:** (e.g., `#10`) 
+**Issue Number:** (e.g., `#10`)
 
 If this PR doesn’t relate to an issue, explain why it’s needed.
 
@@ -24,15 +24,16 @@ Describe what you did in a few sentences. Be specific but keep it simple!
 
 ---
 
-## 🛠️ Type of Changes  
+## 🛠️ Type of Changes
+
 _Check all that apply:_
 
-- [ ] **Frontend**: Changes to `frontend/` (e.g., `App.jsx`, `App.css`, UI tweaks)  
-- [ ] **Backend**: Changes to `backend/` (e.g., `index.js`, `svg.js`, `words.json`)  
-- [ ] **Documentation**: Changes to `README.md`, `CONTRIBUTING.md`, etc.  
-- [ ] **Configuration**: Changes to `vercel.json`, `.gitignore`, etc.  
-- [ ] **Bug Fix**: Fixed an issue (describe briefly)  
-- [ ] **New Feature**: Added something new (describe briefly)  
+- [ ] **Frontend**: Changes to `frontend/` (e.g., `App.jsx`, `App.css`, UI tweaks)
+- [ ] **Backend**: Changes to `backend/` (e.g., `index.js`, `svg.js`, `words.json`)
+- [ ] **Documentation**: Changes to `README.md`, `CONTRIBUTING.md`, etc.
+- [ ] **Configuration**: Changes to `vercel.json`, `.gitignore`, etc.
+- [ ] **Bug Fix**: Fixed an issue (describe briefly)
+- [ ] **New Feature**: Added something new (describe briefly)
 - [ ] **Other**: (specify, e.g., CI/CD, GitHub Actions)
 
 ---

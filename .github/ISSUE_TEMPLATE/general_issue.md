@@ -1,7 +1,7 @@
 ---
 name: 🧩 General Issue
 about: For issues or questions not covered by Bug Report or Feature Request
-title: "[GENERAL] "
+title: '[GENERAL] '
 labels: help wanted, good first issue
 assignees: ''
 ---
@@ -11,7 +11,8 @@ assignees: ''
 ## ❓ What’s the Issue?
 
 Briefly describe the issue or question.  
-**Example:**  
+**Example:**
+
 > "Need clearer ESLint setup instructions in `frontend/`."
 
 ---
@@ -19,7 +20,8 @@ Briefly describe the issue or question.
 ## 🔍 Why Is This Important?
 
 How does this help improve HaikuReadme?  
-**Example:**  
+**Example:**
+
 > "Helps contributors fix linting issues and maintain code quality."
 
 ---
@@ -27,7 +29,8 @@ How does this help improve HaikuReadme?
 ## 🛠️ Suggested Fix (Optional)
 
 Any ideas or pointers for a fix?  
-**Example:**  
+**Example:**
+
 > "Add ESLint setup steps in `CONTRIBUTING.md` under 'Code Standards'."
 
 ---
@@ -35,7 +38,8 @@ Any ideas or pointers for a fix?
 ## 📎 Additional Details
 
 Anything else we should know?  
-**Example:**  
+**Example:**
+
 > "May be related to linting issue #12."
 
 ---
