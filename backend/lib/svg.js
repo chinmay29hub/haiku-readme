@@ -48,7 +48,7 @@ const themes = {
     background: '#1e1a0f',
     text: '#ffdd57',
     border: '#ff4500',
-  }
+  },
 };
 
 function generateSvg(
