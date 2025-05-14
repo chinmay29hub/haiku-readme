@@ -92,6 +92,13 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/46410174?v=4",
       "profile": "https://allcontributors.org/",
       "contributions": ["doc"]
+    },
+    {
+      "login": "shubhvj",
+      "name": "Shubh Vrat Johri ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/26573621?v=4",
+      "profile": "https://github.com/shubhvj",
+      "contributions": ["code"]
     }
   ],
   "contributorsPerLine": 7,
