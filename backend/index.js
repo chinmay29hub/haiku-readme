@@ -3,8 +3,12 @@ const express = require('express');
 const path = require('path');
 const { generateHaiku } = require('./lib/haiku');
 const { generateSvg } = require('./lib/svg');
+const cors = require('cors');
 const loggerMiddleware = require('./middleware/logging/logging.middleware');
 const app = express();
+
+app.use(cors());
+app.options('*', cors());
 
 //logger middleware
 app.use(loggerMiddleware);
