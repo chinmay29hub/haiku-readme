@@ -6,9 +6,8 @@ import {
   LinkedinShareButton,
   TwitterIcon,
   FacebookIcon,
-  LinkedinIcon
+  LinkedinIcon,
 } from 'react-share';
-
 
 function App() {
   const [theme, setTheme] = useState('catppuccin_mocha');
@@ -132,7 +131,14 @@ function App() {
         <h2>Markdown for README</h2>
         <pre>{markdownUrl}</pre>
         <button onClick={copyToClipboard}>Copy Markdown</button>
-        <div style={{ marginTop: '1rem', display: 'flex', gap: '10px', justifyContent: 'center' }}>
+        <div
+          style={{
+            marginTop: '1rem',
+            display: 'flex',
+            gap: '10px',
+            justifyContent: 'center',
+          }}
+        >
           <TwitterShareButton url={svgUrl} title="Check out my GitHub Haiku!">
             <TwitterIcon size={32} round />
           </TwitterShareButton>
@@ -141,11 +147,13 @@ function App() {
             <FacebookIcon size={32} round />
           </FacebookShareButton>
 
-          <LinkedinShareButton url={svgUrl} summary="A custom haiku from HaikuReadme">
+          <LinkedinShareButton
+            url={svgUrl}
+            summary="A custom haiku from HaikuReadme"
+          >
             <LinkedinIcon size={32} round />
           </LinkedinShareButton>
         </div>
-
       </div>
 
       <footer>
