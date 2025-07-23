@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js",
     "postinstall": "cd ../frontend && npm install && npm run build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
@@ -23,7 +22,6 @@
     "eslint-config-prettier": "^10.1.2",
     "eslint-plugin-prettier": "^5.2.6",
     "globals": "^16.0.0",
-    "nodemon": "^3.1.10",
     "prettier": "^3.5.3"
   }
 }
