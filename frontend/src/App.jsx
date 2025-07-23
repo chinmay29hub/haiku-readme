@@ -131,29 +131,27 @@ function App() {
         <h2>Markdown for README</h2>
         <pre>{markdownUrl}</pre>
         <button onClick={copyToClipboard}>Copy Markdown</button>
-        <div
-          style={{
-            marginTop: '1rem',
-            display: 'flex',
-            gap: '10px',
-            justifyContent: 'center',
-          }}
-        >
-          <TwitterShareButton url={svgUrl} title="Check out my GitHub Haiku!">
-            <TwitterIcon size={32} round />
-          </TwitterShareButton>
+        {svgUrl ? (
+          <div className="share-buttons">
+            <TwitterShareButton url={svgUrl} title="Check out my GitHub Haiku!">
+              <TwitterIcon size={32} round />
+            </TwitterShareButton>
 
-          <FacebookShareButton url={svgUrl} quote="My GitHub Haiku">
-            <FacebookIcon size={32} round />
-          </FacebookShareButton>
+            <FacebookShareButton url={svgUrl} quote="My GitHub Haiku">
+              <FacebookIcon size={32} round />
+            </FacebookShareButton>
 
-          <LinkedinShareButton
-            url={svgUrl}
-            summary="A custom haiku from HaikuReadme"
-          >
-            <LinkedinIcon size={32} round />
-          </LinkedinShareButton>
-        </div>
+            <LinkedinShareButton
+              url={svgUrl}
+              summary="A custom haiku from HaikuReadme"
+            >
+              <LinkedinIcon size={32} round />
+            </LinkedinShareButton>
+          </div>
+        ) : (
+          <p>Please generate a haiku to enable sharing.</p>
+        )}
+
       </div>
 
       <footer>
