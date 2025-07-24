@@ -177,3 +177,10 @@ a:hover {
     padding: 20px;
   }
 }
+.share-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center; /* 👈 Center horizontally */
+}
+
