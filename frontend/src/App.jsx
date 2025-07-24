@@ -8,11 +8,15 @@ import {
   FacebookIcon,
   LinkedinIcon,
 } from 'react-share';
+import { useEffect } from 'react';
+import { ClipLoader } from 'react-spinners';
+
 
 function App() {
   const [theme, setTheme] = useState('catppuccin_mocha');
   const [type, setType] = useState('vertical');
   const [border, setBorder] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
   const themes = [
     'catppuccin_mocha',
@@ -76,6 +80,10 @@ function App() {
     setBorder(Math.round(Math.random()) === 1 ? true : false);
   };
 
+  useEffect(() => {
+    setIsLoading(true);
+  }, [theme, type, border]);
+
   return (
     <div className="App">
       <header>
@@ -120,10 +128,25 @@ function App() {
 
       <div className="preview">
         <h2>Preview</h2>
+
+        {isLoading && (
+          <div className="spinner-container">
+            <ClipLoader color="#36d7b7" size={50} />
+          </div>
+        )}
+
         <img
           src={svgUrl}
           alt="Haiku SVG"
-          onError={() => alert('Failed to load SVG')}
+          onLoad={() => setIsLoading(false)}
+          onError={() => {
+            setIsLoading(false);
+            alert('Failed to load SVG');
+          }}
+          // Using minimal height instead of display: none to ensure the image loads 
+          // and triggers onLoad/onError correctly, while avoiding a visible flicker 
+          // between spinner and image on slow networks.
+          style={{ height: isLoading ? '1px' : ''}}
         />
       </div>
 
