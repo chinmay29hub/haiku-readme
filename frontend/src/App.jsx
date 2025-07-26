@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import {
   TwitterShareButton,
@@ -8,11 +8,17 @@ import {
   FacebookIcon,
   LinkedinIcon,
 } from 'react-share';
+import { ClipLoader } from 'react-spinners';
 
 function App() {
   const [theme, setTheme] = useState('catppuccin_mocha');
   const [type, setType] = useState('vertical');
   const [border, setBorder] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
+
+  // Spinner styles
+  const SPINNER_COLOR = '#36d7b7';
+  const SPINNER_SIZE = 50;
 
   const themes = [
     'catppuccin_mocha',
@@ -76,6 +82,10 @@ function App() {
     setBorder(Math.round(Math.random()) === 1 ? true : false);
   };
 
+  useEffect(() => {
+    setIsLoading(true);
+  }, [theme, type, border]);
+
   return (
     <div className="App">
       <header>
@@ -120,10 +130,22 @@ function App() {
 
       <div className="preview">
         <h2>Preview</h2>
+
+        {isLoading && (
+          <div className="spinner-container">
+            <ClipLoader color={SPINNER_COLOR} size={SPINNER_SIZE} />
+          </div>
+        )}
+
         <img
+          className={isLoading ? 'hide-haiku' : ''}
           src={svgUrl}
           alt="Haiku SVG"
-          onError={() => alert('Failed to load SVG')}
+          onLoad={() => setIsLoading(false)}
+          onError={() => {
+            setIsLoading(false);
+            alert('Failed to load SVG');
+          }}
         />
       </div>
 
@@ -151,7 +173,6 @@ function App() {
         ) : (
           <p>Please generate a haiku to enable sharing.</p>
         )}
-
       </div>
 
       <footer>

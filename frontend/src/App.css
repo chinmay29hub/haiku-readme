@@ -184,3 +184,17 @@ a:hover {
   justify-content: center; /* 👈 Center horizontally */
 }
 
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+/* Using max-height instead of display: none to ensure the image loads 
+and triggers onLoad/onError correctly, while avoiding a visible flicker 
+between spinner and image on slow networks. */
+.hide-haiku {
+  max-height: 1px;
+  visibility: hidden;
+}

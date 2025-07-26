@@ -16,7 +16,8 @@
     "haiku-readme": "file:..",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-share": "^5.2.2"
+    "react-share": "^5.2.2",
+    "react-spinners": "^0.17.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.26.0",
