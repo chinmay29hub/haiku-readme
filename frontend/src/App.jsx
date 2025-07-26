@@ -139,6 +139,7 @@ function App() {
         )}
 
         <img
+          className={isLoading ? "hide-haiku" : ""}
           src={svgUrl}
           alt="Haiku SVG"
           onLoad={() => setIsLoading(false)}
@@ -146,10 +147,6 @@ function App() {
             setIsLoading(false);
             alert('Failed to load SVG');
           }}
-          // Using minimal height instead of display: none to ensure the image loads 
-          // and triggers onLoad/onError correctly, while avoiding a visible flicker 
-          // between spinner and image on slow networks.
-          style={{ height: isLoading ? '1px' : ''}}
         />
       </div>
 
