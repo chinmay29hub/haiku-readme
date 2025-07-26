@@ -10,7 +10,6 @@ import {
 } from 'react-share';
 import { ClipLoader } from 'react-spinners';
 
-
 function App() {
   const [theme, setTheme] = useState('catppuccin_mocha');
   const [type, setType] = useState('vertical');
@@ -139,7 +138,7 @@ function App() {
         )}
 
         <img
-          className={isLoading ? "hide-haiku" : ""}
+          className={isLoading ? 'hide-haiku' : ''}
           src={svgUrl}
           alt="Haiku SVG"
           onLoad={() => setIsLoading(false)}
@@ -174,7 +173,6 @@ function App() {
         ) : (
           <p>Please generate a haiku to enable sharing.</p>
         )}
-
       </div>
 
       <footer>
