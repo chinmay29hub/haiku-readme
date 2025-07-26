@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import {
   TwitterShareButton,
@@ -8,7 +8,6 @@ import {
   FacebookIcon,
   LinkedinIcon,
 } from 'react-share';
-import { useEffect } from 'react';
 import { ClipLoader } from 'react-spinners';
 
 
@@ -17,6 +16,10 @@ function App() {
   const [type, setType] = useState('vertical');
   const [border, setBorder] = useState(true);
   const [isLoading, setIsLoading] = useState(true);
+
+  // Spinner styles
+  const SPINNER_COLOR = '#36d7b7';
+  const SPINNER_SIZE = 50;
 
   const themes = [
     'catppuccin_mocha',
@@ -131,7 +134,7 @@ function App() {
 
         {isLoading && (
           <div className="spinner-container">
-            <ClipLoader color="#36d7b7" size={50} />
+            <ClipLoader color={SPINNER_COLOR} size={SPINNER_SIZE} />
           </div>
         )}
 
