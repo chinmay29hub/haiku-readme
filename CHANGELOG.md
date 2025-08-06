@@ -11,10 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - 🐛 Added Logger Middleware for Backend API requests. [[#28](https://github.com/chinmay29hub/haiku-readme/pull/28)]
 - ✨ Added randomize button. [[#27](https://github.com/chinmay29hub/haiku-readme/pull/27)]
-- 🐛 Added command to restrict deployment from main branch.  [[#12](https://github.com/chinmay29hub/haiku-readme/pull/12)]
+- 🐛 Added command to restrict deployment from main branch. [[#12](https://github.com/chinmay29hub/haiku-readme/pull/12)]
 - 🎨 Added two new themes 'velvet_dusk' and 'solar_flare'. [[#11](https://github.com/chinmay29hub/haiku-readme/pull/11)]
-- 🐛 Added .editorconfig for consistent formatting.  [[#10](https://github.com/chinmay29hub/haiku-readme/pull/10)]
-- 🐛 Added .vercelignore to skip unnecessary builds.  [[#3](https://github.com/chinmay29hub/haiku-readme/pull/3)]
+- 🐛 Added .editorconfig for consistent formatting. [[#10](https://github.com/chinmay29hub/haiku-readme/pull/10)]
+- 🐛 Added .vercelignore to skip unnecessary builds. [[#3](https://github.com/chinmay29hub/haiku-readme/pull/3)]
 
 ### Fixed
 
@@ -29,29 +29,33 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - 🧹 Removed weekly-digest.yml file. [[#53](https://github.com/chinmay29hub/haiku-readme/pull/53)]
 - 🧹 Removed test.md file from root directory. [[#26](https://github.com/chinmay29hub/haiku-readme/pull/26)]
 
-
 ## [1.1.0] - 2025-04-22
 
 ### Changed
+
 - 📄 Updated the README with a fresh haiku by updating the URL timestamp to avoid cache.
 
 ## [1.0.2] - 2025-04-22
 
 ### Added
+
 - ✨ Included Name, Icon and Color in the GitHub Action metadata
 
 ### Fixed
+
 - 🐛 Fixed yml path
 - 🐛 Fixed sed in the GitHub Action metadata
 
 ### Changed
+
 - 📄 Updated Haiku timestamp on README
 
 ### Removed
-- 🧹 Removed GitHub Action metadata file from wrong folder
 
+- 🧹 Removed GitHub Action metadata file from wrong folder
 
 ## [1.0.1] - 2025-04-22
 
 ### Added
-- ✨ Initial version of HaikuReadme 
+
+- ✨ Initial version of HaikuReadme
