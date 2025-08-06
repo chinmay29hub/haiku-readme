@@ -5,7 +5,6 @@ const { generateHaiku } = require('./lib/haiku');
 const { generateSvg } = require('./lib/svg');
 const loggerMiddleware = require('./middleware/logging/logging.middleware');
 const app = express();
-
 const rateLimit = require('express-rate-limit');
 const requestsLimit = Number(process.env.REQUESTS_LIMIT) || 100;
 const timeLimit = Number(process.env.RATE_LIMIT_MINUTES) || 15;
@@ -14,8 +13,8 @@ const limiter = rateLimit({
   windowMs: timeLimit * 60 * 1000,
   limit: requestsLimit,
 	standardHeaders: 'draft-8',
-	legacyHeaders: false, 
-	ipv6Subnet: 56, 
+	legacyHeaders: false,
+	ipv6Subnet: 56,
 })
 
 //logger middleware
