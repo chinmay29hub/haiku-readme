@@ -96,6 +96,10 @@ const fonts = {
   'Fira Code': {
     import: "@import url('https://fonts.googleapis.com/css2?family=Fira+Code&amp;display=swap');",
     family: "'Fira Code', monospace"
+  },
+  "JetBrains Mono": {
+    import: "@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');",
+    family: "'JetBrains Mono', monospace"
   }
 };
 
