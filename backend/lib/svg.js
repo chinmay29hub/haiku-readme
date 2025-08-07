@@ -62,7 +62,16 @@ const fonts = {
       "@import url('https://fonts.googleapis.com/css2?family=Inconsolata&amp;display=swap');",
     family: 'Inconsolata, monospace',
   },
+<<<<<<< HEAD
   Arial: {
+=======
+  'Poppins': {
+  import: "@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');",
+  family: 'Poppins, sans-serif'
+},
+
+  'Arial': {
+>>>>>>> 5737a5ff3257262daba31ec11a2bebc7592ee0db
     import: '', // Web-safe
     family: 'Arial, sans-serif',
   },
@@ -98,10 +107,14 @@ const fonts = {
       "@import url('https://fonts.googleapis.com/css2?family=Fira+Code&amp;display=swap');",
     family: "'Fira Code', monospace",
   },
-  Impact: {
+  "Impact": {
     import: '',
     family: 'Impact, Charcoal, sans-serif',
   },
+  "JetBrains Mono": {
+    import: "@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');",
+    family: "'JetBrains Mono', monospace"
+  }
 };
 
 function generateSvg(
