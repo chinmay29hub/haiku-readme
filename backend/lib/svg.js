@@ -67,12 +67,8 @@ const fonts = {
     family: 'Arial, sans-serif',
   },
   'Courier New': {
-    import: '', // Web-safe
+    import: '', // Web- safe
     family: '"Courier New", monospace',
-  },
-  Georgia: {
-    import: '', // Web-safe
-    family: 'Georgia, serif',
   },
   'Comic Sans MS': {
     import: '', // Web-safe
