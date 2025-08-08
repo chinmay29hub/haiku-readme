@@ -62,16 +62,7 @@ const fonts = {
       "@import url('https://fonts.googleapis.com/css2?family=Inconsolata&amp;display=swap');",
     family: 'Inconsolata, monospace',
   },
-<<<<<<< HEAD
-  Arial: {
-=======
-  'Poppins': {
-  import: "@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');",
-  family: 'Poppins, sans-serif'
-},
-
   'Arial': {
->>>>>>> 5737a5ff3257262daba31ec11a2bebc7592ee0db
     import: '', // Web-safe
     family: 'Arial, sans-serif',
   },
