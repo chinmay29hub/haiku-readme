@@ -19,7 +19,7 @@ app.get('/api', (req, res) => {
       theme = 'catppuccin_mocha',
       type = 'vertical',
       border = 'true',
-      font = 'Fira Code',  // New font query param
+      font = 'Fira Code', // New font query param
     } = req.query;
     const layout = ['vertical', 'horizontal', 'compact'].includes(type)
       ? type
