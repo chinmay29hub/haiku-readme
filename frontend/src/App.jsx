@@ -75,6 +75,37 @@ function App() {
     }
   };
 
+  const handleDownloadSvg = async () => {
+    try {
+      // Fetch the raw SVG
+      const res = await fetch(svgUrl);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const svgText = await res.text();
+
+      // Make a Blob and object URL
+      const blob = new Blob([svgText], { type: 'image/svg+xml' });
+      const url = URL.createObjectURL(blob);
+
+      // Build a timestamped filename
+      const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+      const filename = `haiku-${theme}-${type}-${timestamp}.svg`;
+
+      // Create a hidden <a> and click it
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+
+      // Cleanup
+      URL.revokeObjectURL(url);
+    } catch (err) {
+      console.error('Download failed', err);
+      alert('Failed to download SVG. See console.');
+    }
+  };
+
   // Update theme, type, and border at random.
   const randomizeAppearance = () => {
     setTheme(themes[Math.floor(Math.random() * themes.length)]);
@@ -147,6 +178,7 @@ function App() {
             alert('Failed to load SVG');
           }}
         />
+        <button onClick={handleDownloadSvg}>Download SVG</button>
       </div>
 
       <div className="markdown">
