@@ -100,7 +100,7 @@ const fonts = {
   },
   'JetBrains Mono': {
     import:
-      "@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');",
+      "@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&amp;display=swap');",
     family: "'JetBrains Mono', monospace",
   },
 };
