@@ -5,12 +5,26 @@ const { generateHaiku } = require('./lib/haiku');
 const { generateSvg } = require('./lib/svg');
 const loggerMiddleware = require('./middleware/logging/logging.middleware');
 const app = express();
+const rateLimit = require('express-rate-limit');
+const requestsLimit = Number(process.env.REQUESTS_LIMIT) || 100;
+const timeLimit = Number(process.env.RATE_LIMIT_MINUTES) || 15;
+
+const limiter = rateLimit({
+  windowMs: timeLimit * 60 * 1000,
+  limit: requestsLimit,
+  standardHeaders: 'draft-8',
+  legacyHeaders: false,
+  ipv6Subnet: 56,
+});
 
 // Logger middleware
 app.use(loggerMiddleware);
 
 // Serve static files from frontend/dist
 app.use(express.static(path.join(__dirname, '../frontend/dist')));
+
+// Apply limiter to incoming requests
+app.use(limiter);
 
 // API endpoint
 app.get('/api', (req, res) => {
