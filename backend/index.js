@@ -17,7 +17,7 @@ const limiter = rateLimit({
   ipv6Subnet: 56,
 });
 
-//logger middleware
+// Logger middleware
 app.use(loggerMiddleware);
 
 // Serve static files from frontend/dist
@@ -33,6 +33,7 @@ app.get('/api', (req, res) => {
       theme = 'catppuccin_mocha',
       type = 'vertical',
       border = 'true',
+      font = 'Fira Code', // New font query param
     } = req.query;
     const layout = ['vertical', 'horizontal', 'compact'].includes(type)
       ? type
@@ -41,7 +42,7 @@ app.get('/api', (req, res) => {
     // const forceRefresh = refresh === 'true';
 
     const haiku = generateHaiku();
-    const svg = generateSvg(haiku, { theme, layout, border: useBorder });
+    const svg = generateSvg(haiku, { theme, layout, border: useBorder, font });
 
     res.setHeader('Content-Type', 'image/svg+xml');
     res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
