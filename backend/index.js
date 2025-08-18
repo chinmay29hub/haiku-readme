@@ -6,6 +6,10 @@ const { generateSvg } = require('./lib/svg');
 const loggerMiddleware = require('./middleware/logging/logging.middleware');
 const app = express();
 const rateLimit = require('express-rate-limit');
+
+// Trust proxy for Vercel deployment
+app.set('trust proxy', 1);
+
 const requestsLimit = Number(process.env.REQUESTS_LIMIT) || 100;
 const timeLimit = Number(process.env.RATE_LIMIT_MINUTES) || 15;
 
