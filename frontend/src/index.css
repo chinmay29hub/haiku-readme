@@ -75,7 +75,7 @@ button:focus-visible {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
   }
-  
+
   h1 {
     font-size: 2.5em;
   }
@@ -94,7 +94,7 @@ button:focus-visible {
     position: relative;
     overflow-x: hidden;
   }
-  
+
   #root {
     width: 100%;
     min-height: 100vh;
