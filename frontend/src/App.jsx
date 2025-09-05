@@ -14,6 +14,7 @@ function App() {
   const [theme, setTheme] = useState('catppuccin_mocha');
   const [type, setType] = useState('vertical');
   const [border, setBorder] = useState(true);
+  const [font, setFont] = useState('Fira Code');
   const [isLoading, setIsLoading] = useState(true);
 
   // Spinner styles
@@ -33,8 +34,21 @@ function App() {
     'solar_flare',
   ];
   const types = ['vertical', 'horizontal', 'compact'];
+  const fonts = [
+    'Fira Code',
+    'Roboto',
+    'Inconsolata',
+    'Arial',
+    'Courier New',
+    'Comic Sans MS',
+    'Lobster',
+    'Oswald',
+    'Indie Flower',
+    'Impact',
+    'JetBrains Mono',
+  ];
 
-  const svgUrl = `${import.meta.env.VITE_API_URL}/api?theme=${theme}&type=${type}&border=${border}&t=${Date.now()}`;
+  const svgUrl = `${import.meta.env.VITE_API_URL}/api?theme=${theme}&type=${type}&border=${border}&font=${encodeURIComponent(font)}&t=${Date.now()}`;
   const markdownUrl = `![HaikuReadme](${svgUrl})`;
 
   const copyToClipboard = () => {
@@ -75,16 +89,17 @@ function App() {
     }
   };
 
-  // Update theme, type, and border at random.
+  // Update theme, type, border, and font at random.
   const randomizeAppearance = () => {
     setTheme(themes[Math.floor(Math.random() * themes.length)]);
     setType(types[Math.floor(Math.random() * types.length)]);
     setBorder(Math.round(Math.random()) === 1 ? true : false);
+    setFont(fonts[Math.floor(Math.random() * fonts.length)]);
   };
 
   useEffect(() => {
     setIsLoading(true);
-  }, [theme, type, border]);
+  }, [theme, type, border, font]);
 
   return (
     <div className="App">
@@ -110,6 +125,16 @@ function App() {
             {types.map((t) => (
               <option key={t} value={t}>
                 {t}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div className="control-group">
+          <label>Font:</label>
+          <select value={font} onChange={(e) => setFont(e.target.value)}>
+            {fonts.map((f) => (
+              <option key={f} value={f}>
+                {f}
               </option>
             ))}
           </select>

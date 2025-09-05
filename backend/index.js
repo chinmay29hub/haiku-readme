@@ -48,10 +48,24 @@ const VALID_TYPES = ['vertical', 'horizontal', 'compact'];
 
 const VALID_BORDER_VALUES = ['true', 'false'];
 
+const VALID_FONTS = [
+  'Fira Code',
+  'Roboto',
+  'Inconsolata',
+  'Arial',
+  'Courier New',
+  'Comic Sans MS',
+  'Lobster',
+  'Oswald',
+  'Indie Flower',
+  'Impact',
+  'JetBrains Mono',
+];
+
 // Validation helper functions
 const validateQueryParams = (query) => {
   const errors = [];
-  const { theme, type, border } = query;
+  const { theme, type, border, font } = query;
 
   // Validate theme
   if (theme && !VALID_THEMES.includes(theme)) {
@@ -71,6 +85,13 @@ const validateQueryParams = (query) => {
   if (border && !VALID_BORDER_VALUES.includes(border)) {
     errors.push(
       `❌ Invalid border: "${border}" | ✅ Valid values: ${VALID_BORDER_VALUES.join(', ')}`
+    );
+  }
+
+  // Validate font
+  if (font && !VALID_FONTS.includes(font)) {
+    errors.push(
+      `❌ Invalid font: "${font}" | ✅ Valid fonts: ${VALID_FONTS.join(', ')}`
     );
   }
 
@@ -190,10 +211,19 @@ app.get('/api', (req, res) => {
       theme = 'catppuccin_mocha',
       type = 'vertical',
       border = 'true',
-      font = 'Fira Code', // New font query param
+      font = 'Fira Code',
     } = req.query;
-    const layout = type; // No need for fallback since validation ensures valid type
+    const layout = type;
     const useBorder = border === 'true';
+
+    // Debug logging for font parameter
+    console.log('Font parameter debug:', {
+      raw: req.query.font,
+      decoded: font,
+      type: typeof font,
+      length: font ? font.length : 0,
+      isValid: VALID_FONTS.includes(font)
+    });
 
     const haiku = generateHaiku();
     const svg = generateSvg(haiku, { theme, layout, border: useBorder, font });
