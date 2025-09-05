@@ -11,7 +11,7 @@ const rateLimit = require('express-rate-limit');
 app.set('trust proxy', 1);
 
 // Rate limiting configuration with better defaults
-const requestsLimit = Number(process.env.REQUESTS_LIMIT) || 200; // Increased from 100 to 200
+const requestsLimit = Number(process.env.REQUESTS_LIMIT) || 200;
 const timeLimit = Number(process.env.RATE_LIMIT_MINUTES) || 15;
 
 // Debug logging for rate limit configuration
@@ -21,7 +21,6 @@ console.log('Rate limit configuration:', {
   windowMs: timeLimit * 60 * 1000
 });
 
-// Simple per-user rate limiting using environment variables
 const limiter = rateLimit({
   windowMs: timeLimit * 60 * 1000,
   limit: requestsLimit,
@@ -42,16 +41,12 @@ const limiter = rateLimit({
   }
 });
 
-// Logger middleware
 app.use(loggerMiddleware);
 
-// Serve static files from frontend/dist
 app.use(express.static(path.join(__dirname, '../frontend/dist')));
 
-// Apply limiter to incoming requests
 app.use(limiter);
 
-// Validation constants
 const VALID_THEMES = [
   'catppuccin_mocha',
   'dark',
@@ -83,14 +78,12 @@ const VALID_FONTS = [
   'JetBrains Mono',
 ];
 
-// Add input sanitization function
 const sanitizeInput = (input) => {
   if (typeof input !== 'string') return '';
   
-  // Remove potentially dangerous characters
   return input
-    .replace(/[<>'"&]/g, '') // Remove HTML/XML special chars
-    .replace(/[^\w\s-]/g, '') // Keep only alphanumeric, spaces, hyphens
+    .replace(/[<>'"&]/g, '')
+    .replace(/[^\w\s-]/g, '')
     .trim()
     .substring(0, 50); // Limit length
 };
