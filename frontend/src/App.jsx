@@ -48,7 +48,12 @@ function App() {
     'JetBrains Mono',
   ];
 
-  const svgUrl = `${import.meta.env.VITE_API_URL}/api?theme=${theme}&type=${type}&border=${border}&font=${encodeURIComponent(font)}&t=${Date.now()}`;
+  // Custom URL encoding function that uses + for spaces
+  const encodeFontParam = (fontName) => {
+    return fontName.replace(/ /g, '+');
+  };
+
+  const svgUrl = `${import.meta.env.VITE_API_URL}/api?theme=${theme}&type=${type}&border=${border}&font=${encodeFontParam(font)}&t=${Date.now()}`;
   const markdownUrl = `![HaikuReadme](${svgUrl})`;
 
   const copyToClipboard = () => {

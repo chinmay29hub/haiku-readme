@@ -216,17 +216,20 @@ app.get('/api', (req, res) => {
     const layout = type;
     const useBorder = border === 'true';
 
+    // Convert + back to spaces for font parameter
+    const decodedFont = font.replace(/\+/g, ' ');
+
     // Debug logging for font parameter
     console.log('Font parameter debug:', {
       raw: req.query.font,
-      decoded: font,
-      type: typeof font,
-      length: font ? font.length : 0,
-      isValid: VALID_FONTS.includes(font)
+      decoded: decodedFont,
+      type: typeof decodedFont,
+      length: decodedFont ? decodedFont.length : 0,
+      isValid: VALID_FONTS.includes(decodedFont)
     });
 
     const haiku = generateHaiku();
-    const svg = generateSvg(haiku, { theme, layout, border: useBorder, font });
+    const svg = generateSvg(haiku, { theme, layout, border: useBorder, font: decodedFont });
 
     res.setHeader('Content-Type', 'image/svg+xml');
     res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
