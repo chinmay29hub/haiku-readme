@@ -247,7 +247,12 @@ button::before {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
   transition: left 0.5s;
 }
 
@@ -420,11 +425,11 @@ a:hover {
   .App {
     gap: clamp(30px, 4vw, 50px);
   }
-  
+
   .controls {
     max-width: 900px;
   }
-  
+
   .preview,
   .markdown {
     max-width: 900px;
@@ -437,20 +442,20 @@ a:hover {
     padding: 20px;
     margin: 15px 0;
   }
-  
+
   .error-message p {
     font-size: 1rem;
   }
-  
+
   .error-message button {
     padding: 12px 24px;
     font-size: 0.95rem;
   }
-  
+
   .checkbox-container {
     gap: 10px;
   }
-  
+
   .checkbox-container input[type='checkbox'] {
     width: 18px;
     height: 18px;

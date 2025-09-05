@@ -18,7 +18,7 @@ const timeLimit = Number(process.env.RATE_LIMIT_MINUTES) || 15;
 console.log('Rate limit configuration:', {
   requestsLimit,
   timeLimit,
-  windowMs: timeLimit * 60 * 1000
+  windowMs: timeLimit * 60 * 1000,
 });
 
 const limiter = rateLimit({
@@ -29,16 +29,16 @@ const limiter = rateLimit({
   ipv6Subnet: 56,
   message: {
     error: 'Too many requests from this user',
-    retryAfter: `${timeLimit} minutes`
+    retryAfter: `${timeLimit} minutes`,
   },
   // Add a custom handler for rate limit responses
   handler: (req, res) => {
     res.status(429).json({
       error: 'Too many requests from this user',
       retryAfter: `${timeLimit} minutes`,
-      isRateLimit: true
+      isRateLimit: true,
     });
-  }
+  },
 });
 
 app.use(loggerMiddleware);
@@ -80,7 +80,7 @@ const VALID_FONTS = [
 
 const sanitizeInput = (input) => {
   if (typeof input !== 'string') return '';
-  
+
   return input
     .replace(/[<>'"&]/g, '')
     .replace(/[^\w\s-]/g, '')
@@ -95,7 +95,7 @@ const validateQueryParams = (query) => {
 
   // Sanitize font input
   const sanitizedFont = font ? sanitizeInput(font) : 'Fira Code';
-  
+
   // Validate theme
   if (theme && !VALID_THEMES.includes(theme)) {
     errors.push(
@@ -254,11 +254,16 @@ app.get('/api', (req, res) => {
       decoded: decodedFont,
       type: typeof decodedFont,
       length: decodedFont ? decodedFont.length : 0,
-      isValid: VALID_FONTS.includes(decodedFont)
+      isValid: VALID_FONTS.includes(decodedFont),
     });
 
     const haiku = generateHaiku();
-    const svg = generateSvg(haiku, { theme, layout, border: useBorder, font: decodedFont });
+    const svg = generateSvg(haiku, {
+      theme,
+      layout,
+      border: useBorder,
+      font: decodedFont,
+    });
 
     res.setHeader('Content-Type', 'image/svg+xml');
     res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');

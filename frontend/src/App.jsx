@@ -115,31 +115,35 @@ function App() {
 
   const handleImageError = (error) => {
     setIsLoading(false);
-    
+
     // The issue is that the fetch request is also being rate limited
     // Let's use a different approach - check if the server is responding
     // by making a request to a different endpoint that might not be rate limited
-    
+
     const img = error.target;
     if (img && img.src) {
       // Try to detect rate limit by checking if the server is responding
       // We'll use a different endpoint that might not be rate limited
-      
-      fetch('/api/help', { 
+
+      fetch('/api/help', {
         method: 'GET',
-        cache: 'no-cache'
+        cache: 'no-cache',
       })
-        .then(response => {
+        .then((response) => {
           if (response.ok) {
             // Server is reachable, so the original error was likely a rate limit
-            setErrorMessage('⏰ Rate limit reached! Please wait a few minutes before generating more haikus.');
+            setErrorMessage(
+              '⏰ Rate limit reached! Please wait a few minutes before generating more haikus.'
+            );
           } else {
             setErrorMessage('❌ Failed to load haiku. Please try again.');
           }
         })
         .catch(() => {
           // Server is not reachable, so it's a network error
-          setErrorMessage('❌ Network error. Please check your connection and try again.');
+          setErrorMessage(
+            '❌ Network error. Please check your connection and try again.'
+          );
         });
     } else {
       setErrorMessage('❌ Failed to load SVG');
@@ -219,12 +223,14 @@ function App() {
         {errorMessage && (
           <div className="error-message">
             <p>{errorMessage}</p>
-            <button onClick={() => {
-              setErrorMessage('');
-              setIsLoading(true);
-              // Force reload by updating timestamp
-              window.location.reload();
-            }}>
+            <button
+              onClick={() => {
+                setErrorMessage('');
+                setIsLoading(true);
+                // Force reload by updating timestamp
+                window.location.reload();
+              }}
+            >
               Try Again
             </button>
           </div>
@@ -242,7 +248,7 @@ function App() {
       <div className="markdown">
         <h2>Markdown for README</h2>
         <pre>{markdownUrl}</pre>
-        <button 
+        <button
           onClick={copyToClipboard}
           className={copySuccess ? 'copy-success' : ''}
         >
