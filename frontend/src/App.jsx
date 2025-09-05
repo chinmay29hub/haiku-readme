@@ -17,6 +17,7 @@ function App() {
   const [font, setFont] = useState('Fira Code');
   const [isLoading, setIsLoading] = useState(true);
   const [errorMessage, setErrorMessage] = useState('');
+  const [copySuccess, setCopySuccess] = useState(false);
 
   // Spinner styles
   const SPINNER_COLOR = '#36d7b7';
@@ -62,7 +63,10 @@ function App() {
     if (navigator.clipboard) {
       navigator.clipboard
         .writeText(markdownUrl)
-        .then(() => alert('Markdown URL copied to clipboard!'))
+        .then(() => {
+          setCopySuccess(true);
+          setTimeout(() => setCopySuccess(false), 2000);
+        })
         .catch(() => {
           // Fallback for mobile
           const textarea = document.createElement('textarea');
@@ -71,7 +75,8 @@ function App() {
           textarea.select();
           try {
             document.execCommand('copy');
-            alert('Markdown URL copied to clipboard!');
+            setCopySuccess(true);
+            setTimeout(() => setCopySuccess(false), 2000);
           } catch (err) {
             void err;
             alert('Failed to copy. Please copy manually.');
@@ -86,7 +91,8 @@ function App() {
       textarea.select();
       try {
         document.execCommand('copy');
-        alert('Markdown URL copied to clipboard!');
+        setCopySuccess(true);
+        setTimeout(() => setCopySuccess(false), 2000);
       } catch (err) {
         void err;
         alert('Failed to copy. Please copy manually.');
@@ -185,11 +191,14 @@ function App() {
         </div>
         <div className="control-group">
           <label>Border:</label>
-          <input
-            type="checkbox"
-            checked={border}
-            onChange={(e) => setBorder(e.target.checked)}
-          />
+          <div className="checkbox-container">
+            <input
+              type="checkbox"
+              checked={border}
+              onChange={(e) => setBorder(e.target.checked)}
+            />
+            <label>Enable Border</label>
+          </div>
         </div>
         <div className="control-group">
           <label>Randomize:</label>
@@ -203,6 +212,7 @@ function App() {
         {isLoading && (
           <div className="spinner-container">
             <ClipLoader color={SPINNER_COLOR} size={SPINNER_SIZE} />
+            <p>Generating your haiku...</p>
           </div>
         )}
 
@@ -232,7 +242,12 @@ function App() {
       <div className="markdown">
         <h2>Markdown for README</h2>
         <pre>{markdownUrl}</pre>
-        <button onClick={copyToClipboard}>Copy Markdown</button>
+        <button 
+          onClick={copyToClipboard}
+          className={copySuccess ? 'copy-success' : ''}
+        >
+          {copySuccess ? '✓ Copied!' : 'Copy Markdown'}
+        </button>
         {svgUrl ? (
           <div className="share-buttons">
             <TwitterShareButton url={svgUrl} title="Check out my GitHub Haiku!">
