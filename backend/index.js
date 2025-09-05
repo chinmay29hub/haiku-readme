@@ -62,11 +62,26 @@ const VALID_FONTS = [
   'JetBrains Mono',
 ];
 
+// Add input sanitization function
+const sanitizeInput = (input) => {
+  if (typeof input !== 'string') return '';
+  
+  // Remove potentially dangerous characters
+  return input
+    .replace(/[<>'"&]/g, '') // Remove HTML/XML special chars
+    .replace(/[^\w\s-]/g, '') // Keep only alphanumeric, spaces, hyphens
+    .trim()
+    .substring(0, 50); // Limit length
+};
+
 // Validation helper functions
 const validateQueryParams = (query) => {
   const errors = [];
   const { theme, type, border, font } = query;
 
+  // Sanitize font input
+  const sanitizedFont = font ? sanitizeInput(font) : 'Fira Code';
+  
   // Validate theme
   if (theme && !VALID_THEMES.includes(theme)) {
     errors.push(
@@ -88,10 +103,10 @@ const validateQueryParams = (query) => {
     );
   }
 
-  // Validate font
-  if (font && !VALID_FONTS.includes(font)) {
+  // Validate font with sanitized input
+  if (sanitizedFont && !VALID_FONTS.includes(sanitizedFont)) {
     errors.push(
-      `❌ Invalid font: "${font}" | ✅ Valid fonts: ${VALID_FONTS.join(', ')}`
+      `❌ Invalid font: "${sanitizedFont}" | ✅ Valid fonts: ${VALID_FONTS.join(', ')}`
     );
   }
 
