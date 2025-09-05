@@ -6,7 +6,7 @@
 }
 
 body {
-  background: linear-gradient(135deg, #1e1e2e 0%, #2a2e45 100%);
+  background: #1e1e2e;
   color: #cdd6f4;
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;
