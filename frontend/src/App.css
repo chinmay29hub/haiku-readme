@@ -126,19 +126,71 @@ pre {
 }
 
 button {
-  background: #cba6f7;
+  background: linear-gradient(135deg, #f5c2e7 0%, #cba6f7 100%);
   color: #1e1e2e;
-  padding: 10px 20px;
+  padding: 12px 24px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   font-size: clamp(0.9rem, 3vw, 1rem);
   cursor: pointer;
-  transition: background 0.3s;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(245, 194, 231, 0.3);
+  font-weight: 600;
   margin-top: 10px;
 }
 
 button:hover {
-  background: #f5c2e7;
+  background: linear-gradient(135deg, #cba6f7 0%, #f5c2e7 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(245, 194, 231, 0.4);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(245, 194, 231, 0.3);
+}
+
+/* Specific styling for main action buttons (Randomize, Try Again, Copy Markdown) */
+button:not(.share-buttons button) {
+  background: linear-gradient(135deg, #f5c2e7 0%, #cba6f7 100%);
+  color: #1e1e2e;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: clamp(0.9rem, 3vw, 1rem);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(245, 194, 231, 0.3);
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+button:not(.share-buttons button):hover {
+  background: linear-gradient(135deg, #cba6f7 0%, #f5c2e7 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(245, 194, 231, 0.4);
+}
+
+button:not(.share-buttons button):active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(245, 194, 231, 0.3);
+}
+
+/* Keep social share buttons with their original styling */
+.share-buttons button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  transform: none;
+  font-weight: normal;
+}
+
+.share-buttons button:hover {
+  background: transparent;
+  transform: none;
+  box-shadow: none;
 }
 
 /* Footer */
@@ -197,4 +249,65 @@ between spinner and image on slow networks. */
 .hide-haiku {
   max-height: 1px;
   visibility: hidden;
+}
+
+.error-message {
+  background: linear-gradient(135deg, #2d2d44 0%, #3a3a5c 100%);
+  color: #cdd6f4;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  margin: 15px 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  border: 1px solid #4a4a6a;
+  backdrop-filter: blur(10px);
+}
+
+.error-message p {
+  margin: 0 0 15px 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #f5c2e7;
+}
+
+.error-message button {
+  background: linear-gradient(135deg, #f5c2e7 0%, #cba6f7 100%);
+  color: #1e1e2e;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(245, 194, 231, 0.3);
+}
+
+.error-message button:hover {
+  background: linear-gradient(135deg, #cba6f7 0%, #f5c2e7 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(245, 194, 231, 0.4);
+}
+
+.error-message button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(245, 194, 231, 0.3);
+}
+
+/* Make the error message more compact on mobile */
+@media (max-width: 768px) {
+  .error-message {
+    padding: 15px;
+    margin: 10px 0;
+  }
+  
+  .error-message p {
+    font-size: 14px;
+  }
+  
+  .error-message button {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
 }

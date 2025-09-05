@@ -10,15 +10,36 @@ const rateLimit = require('express-rate-limit');
 // Trust proxy for Vercel deployment
 app.set('trust proxy', 1);
 
-const requestsLimit = Number(process.env.REQUESTS_LIMIT) || 100;
+// Rate limiting configuration with better defaults
+const requestsLimit = Number(process.env.REQUESTS_LIMIT) || 200; // Increased from 100 to 200
 const timeLimit = Number(process.env.RATE_LIMIT_MINUTES) || 15;
 
+// Debug logging for rate limit configuration
+console.log('Rate limit configuration:', {
+  requestsLimit,
+  timeLimit,
+  windowMs: timeLimit * 60 * 1000
+});
+
+// Simple per-user rate limiting using environment variables
 const limiter = rateLimit({
   windowMs: timeLimit * 60 * 1000,
   limit: requestsLimit,
   standardHeaders: 'draft-8',
   legacyHeaders: false,
   ipv6Subnet: 56,
+  message: {
+    error: 'Too many requests from this user',
+    retryAfter: `${timeLimit} minutes`
+  },
+  // Add a custom handler for rate limit responses
+  handler: (req, res) => {
+    res.status(429).json({
+      error: 'Too many requests from this user',
+      retryAfter: `${timeLimit} minutes`,
+      isRateLimit: true
+    });
+  }
 });
 
 // Logger middleware
