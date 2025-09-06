@@ -1,3 +1,9 @@
 User-agent: *
 Allow: /
+Allow: /api
+Disallow: /api/help
 Sitemap: https://chinmay29hub-haiku-readme.vercel.app/sitemap.xml
+
+# Crawl-delay for API endpoints
+User-agent: *
+Crawl-delay: 1

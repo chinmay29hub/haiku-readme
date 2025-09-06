@@ -55,24 +55,24 @@ const fonts = {
   Roboto: {
     import:
       "@import url('https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap');",
-    family: 'Roboto, sans-serif',
+    family: "'Roboto', sans-serif",
   },
   Inconsolata: {
     import:
       "@import url('https://fonts.googleapis.com/css2?family=Inconsolata&amp;display=swap');",
-    family: 'Inconsolata, monospace',
+    family: "'Inconsolata', monospace",
   },
   Arial: {
     import: '', // Web-safe
-    family: 'Arial, sans-serif',
+    family: "'Arial', sans-serif",
   },
   'Courier New': {
-    import: '', // Web- safe
-    family: '"Courier New", monospace',
+    import: '', // Web-safe
+    family: "'Courier New', monospace",
   },
   'Comic Sans MS': {
     import: '', // Web-safe
-    family: '"Comic Sans MS", cursive, sans-serif',
+    family: "'Comic Sans MS', cursive, sans-serif",
   },
   Lobster: {
     import:
@@ -96,7 +96,7 @@ const fonts = {
   },
   Impact: {
     import: '',
-    family: 'Impact, Charcoal, sans-serif',
+    family: "'Impact', Charcoal, sans-serif",
   },
   'JetBrains Mono': {
     import:

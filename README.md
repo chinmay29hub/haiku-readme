@@ -64,6 +64,7 @@ HaikuReadme generates poetic, customizable haiku SVGs you can embed in your GitH
 
 - 🎨 Customizable themes: `catppuccin_mocha`, `dracula`, `cyberpunk`, and more
 - 🧱 Layouts: `vertical`, `horizontal`, and `compact`
+- 🔤 Font options: `Fira Code`, `Roboto`, `JetBrains Mono`, and more
 - 🎁 Embeddable: Drop into any README with one line
 - 💡 Automatically updated: Hourly haiku refresh (via GitHub Actions)
 - 🌍 Mobile-friendly frontend for on-the-go customization
@@ -83,9 +84,10 @@ Embed this in your GitHub README:
 
 | Parameter | Description  | Options                                                                                                     | Default            |
 | --------- | ------------ | ----------------------------------------------------------------------------------------------------------- | ------------------ |
-| `theme`   | Color scheme | `catppuccin_mocha`, `dark`, `dracula`, `nord`, `tokyo_night`, `gruvbox_dark`, `solarized_dark`, `cyberpunk` | `catppuccin_mocha` |
+| `theme`   | Color scheme | `catppuccin_mocha`, `dark`, `dracula`, `nord`, `tokyo_night`, `gruvbox_dark`, `solarized_dark`, `cyberpunk`, `velvet_dusk`, `solar_flare` | `catppuccin_mocha` |
 | `type`    | Layout style | `vertical`, `horizontal`, `compact`                                                                         | `vertical`         |
 | `border`  | Show border  | `true`, `false`                                                                                             | `true`             |
+| `font`    | Font family  | `Fira Code`, `Roboto`, `Inconsolata`, `Arial`, `Courier New`, `Comic Sans MS`, `Lobster`, `Oswald`, `Indie Flower`, `Impact`, `JetBrains Mono` | `Fira Code`        |
 
 ### ✨ Examples
 
@@ -95,9 +97,14 @@ Embed this in your GitHub README:
   ![HaikuReadme](https://chinmay29hub-haiku-readme.vercel.app/api?theme=dracula&type=horizontal&border=false&t=1757120438)
   ```
 
-- Cyberpunk theme, compact layout:
+- Cyberpunk theme, compact layout with custom font:
   ```markdown
-  ![HaikuReadme](https://chinmay29hub-haiku-readme.vercel.app/api?theme=cyberpunk&type=compact&border=true&t=1757120438)
+  ![HaikuReadme](https://chinmay29hub-haiku-readme.vercel.app/api?theme=cyberpunk&type=compact&border=true&font=JetBrains+Mono&t=1757034121)
+  ```
+
+- Custom font example:
+  ```markdown
+  ![HaikuReadme](https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=vertical&border=true&font=Indie+Flower&t=1757034121)
   ```
 
 ## 🎨 Theme Previews
@@ -117,7 +124,7 @@ Explore more themes at [HaikuReadme Web](https://chinmay29hub-haiku-readme.verce
 Embed this in your GitHub README:
 
 ```markdown
-![HaikuReadme](https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=vertical&border=true&t=1757120438)
+![HaikuReadme](https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=vertical&border=true&font=Fira+Code&t=1757034121)
 ```
 
 ---

@@ -10,8 +10,16 @@ const rateLimit = require('express-rate-limit');
 // Trust proxy for Vercel deployment
 app.set('trust proxy', 1);
 
-const requestsLimit = Number(process.env.REQUESTS_LIMIT) || 100;
+// Rate limiting configuration with better defaults
+const requestsLimit = Number(process.env.REQUESTS_LIMIT) || 200;
 const timeLimit = Number(process.env.RATE_LIMIT_MINUTES) || 15;
+
+// Debug logging for rate limit configuration
+console.log('Rate limit configuration:', {
+  requestsLimit,
+  timeLimit,
+  windowMs: timeLimit * 60 * 1000,
+});
 
 const limiter = rateLimit({
   windowMs: timeLimit * 60 * 1000,
@@ -19,18 +27,26 @@ const limiter = rateLimit({
   standardHeaders: 'draft-8',
   legacyHeaders: false,
   ipv6Subnet: 56,
+  message: {
+    error: 'Too many requests from this user',
+    retryAfter: `${timeLimit} minutes`,
+  },
+  // Add a custom handler for rate limit responses
+  handler: (req, res) => {
+    res.status(429).json({
+      error: 'Too many requests from this user',
+      retryAfter: `${timeLimit} minutes`,
+      isRateLimit: true,
+    });
+  },
 });
 
-// Logger middleware
 app.use(loggerMiddleware);
 
-// Serve static files from frontend/dist
 app.use(express.static(path.join(__dirname, '../frontend/dist')));
 
-// Apply limiter to incoming requests
 app.use(limiter);
 
-// Validation constants
 const VALID_THEMES = [
   'catppuccin_mocha',
   'dark',
@@ -48,10 +64,37 @@ const VALID_TYPES = ['vertical', 'horizontal', 'compact'];
 
 const VALID_BORDER_VALUES = ['true', 'false'];
 
+const VALID_FONTS = [
+  'Fira Code',
+  'Roboto',
+  'Inconsolata',
+  'Arial',
+  'Courier New',
+  'Comic Sans MS',
+  'Lobster',
+  'Oswald',
+  'Indie Flower',
+  'Impact',
+  'JetBrains Mono',
+];
+
+const sanitizeInput = (input) => {
+  if (typeof input !== 'string') return '';
+
+  return input
+    .replace(/[<>'"&]/g, '')
+    .replace(/[^\w\s-]/g, '')
+    .trim()
+    .substring(0, 50); // Limit length
+};
+
 // Validation helper functions
 const validateQueryParams = (query) => {
   const errors = [];
-  const { theme, type, border } = query;
+  const { theme, type, border, font } = query;
+
+  // Sanitize font input
+  const sanitizedFont = font ? sanitizeInput(font) : 'Fira Code';
 
   // Validate theme
   if (theme && !VALID_THEMES.includes(theme)) {
@@ -71,6 +114,13 @@ const validateQueryParams = (query) => {
   if (border && !VALID_BORDER_VALUES.includes(border)) {
     errors.push(
       `❌ Invalid border: "${border}" | ✅ Valid values: ${VALID_BORDER_VALUES.join(', ')}`
+    );
+  }
+
+  // Validate font with sanitized input
+  if (sanitizedFont && !VALID_FONTS.includes(sanitizedFont)) {
+    errors.push(
+      `❌ Invalid font: "${sanitizedFont}" | ✅ Valid fonts: ${VALID_FONTS.join(', ')}`
     );
   }
 
@@ -190,13 +240,30 @@ app.get('/api', (req, res) => {
       theme = 'catppuccin_mocha',
       type = 'vertical',
       border = 'true',
-      font = 'Fira Code', // New font query param
+      font = 'Fira Code',
     } = req.query;
-    const layout = type; // No need for fallback since validation ensures valid type
+    const layout = type;
     const useBorder = border === 'true';
 
+    // Convert + back to spaces for font parameter
+    const decodedFont = font.replace(/\+/g, ' ');
+
+    // Debug logging for font parameter
+    console.log('Font parameter debug:', {
+      raw: req.query.font,
+      decoded: decodedFont,
+      type: typeof decodedFont,
+      length: decodedFont ? decodedFont.length : 0,
+      isValid: VALID_FONTS.includes(decodedFont),
+    });
+
     const haiku = generateHaiku();
-    const svg = generateSvg(haiku, { theme, layout, border: useBorder, font });
+    const svg = generateSvg(haiku, {
+      theme,
+      layout,
+      border: useBorder,
+      font: decodedFont,
+    });
 
     res.setHeader('Content-Type', 'image/svg+xml');
     res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
