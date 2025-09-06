@@ -116,15 +116,8 @@ function App() {
   const handleImageError = (error) => {
     setIsLoading(false);
 
-    // The issue is that the fetch request is also being rate limited
-    // Let's use a different approach - check if the server is responding
-    // by making a request to a different endpoint that might not be rate limited
-
     const img = error.target;
     if (img && img.src) {
-      // Try to detect rate limit by checking if the server is responding
-      // We'll use a different endpoint that might not be rate limited
-
       fetch('/api/help', {
         method: 'GET',
         cache: 'no-cache',
