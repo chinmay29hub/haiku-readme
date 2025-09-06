@@ -181,6 +181,8 @@ select:hover {
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
+  overflow: visible;
+  object-fit: contain;
 }
 
 .preview img:hover {
@@ -459,5 +461,9 @@ a:hover {
   .checkbox-container input[type='checkbox'] {
     width: 18px;
     height: 18px;
+  }
+
+  .preview img {
+    border-radius: 0;
   }
 }
