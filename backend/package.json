@@ -12,6 +12,7 @@
   "dependencies": {
     "dotenv": "^16.4.5",
     "express": "^4.18.2",
+    "express-rate-limit": "^8.0.1",
     "haiku-readme": "file:..",
     "seedrandom": "^3.0.5",
     "syllable": "^4.1.0"

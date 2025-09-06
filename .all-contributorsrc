@@ -66,13 +66,6 @@
       "contributions": ["code"]
     },
     {
-      "login": "svj96",
-      "name": "svj96",
-      "avatar_url": "https://avatars.githubusercontent.com/u/167889409?v=4",
-      "profile": "https://github.com/svj96",
-      "contributions": ["code", "ideas"]
-    },
-    {
       "login": "pr4j3sh",
       "name": "jesh",
       "avatar_url": "https://avatars.githubusercontent.com/u/75523737?v=4",
@@ -87,14 +80,20 @@
       "contributions": ["code"]
     },
     {
-      "login": "all-contributors",
-      "name": "All Contributors",
-      "avatar_url": "https://avatars.githubusercontent.com/u/46410174?v=4",
-      "profile": "https://allcontributors.org/",
+      "login": "shubhvj",
+      "name": "Shubh Vrat Johri ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/26573621?v=4",
+      "profile": "https://github.com/shubhvj",
+      "contributions": ["code", "ideas"]
+    },
+    {
+      "login": "allcontributors[bot]",
+      "name": "allcontributors[bot]",
+      "avatar_url": "https://avatars.githubusercontent.com/in/23186?v=4",
+      "profile": "https://github.com/apps/allcontributors",
       "contributions": ["doc"]
     }
   ],
   "contributorsPerLine": 7,
   "linkToUsage": false
 }
-

@@ -4,7 +4,7 @@ import { defineConfig } from 'eslint/config';
 import prettierConfig from 'eslint-config-prettier';
 
 export default defineConfig([
-  // Base ignores (for backend)
+  // ignores (for backend)
   {
     ignores: [
       'node_modules/',

@@ -39,11 +39,80 @@ const themes = {
     text: '#ff00f7',
     border: '#00fff7',
   },
+  velvet_dusk: {
+    background: '#342e37',
+    text: '#eae0d5',
+    border: '#c6a57b',
+  },
+  solar_flare: {
+    background: '#1e1a0f',
+    text: '#ffdd57',
+    border: '#ff4500',
+  },
+};
+
+const fonts = {
+  Roboto: {
+    import:
+      "@import url('https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap');",
+    family: 'Roboto, sans-serif',
+  },
+  Inconsolata: {
+    import:
+      "@import url('https://fonts.googleapis.com/css2?family=Inconsolata&amp;display=swap');",
+    family: 'Inconsolata, monospace',
+  },
+  Arial: {
+    import: '', // Web-safe
+    family: 'Arial, sans-serif',
+  },
+  'Courier New': {
+    import: '', // Web- safe
+    family: '"Courier New", monospace',
+  },
+  'Comic Sans MS': {
+    import: '', // Web-safe
+    family: '"Comic Sans MS", cursive, sans-serif',
+  },
+  Lobster: {
+    import:
+      "@import url('https://fonts.googleapis.com/css2?family=Lobster&amp;display=swap');",
+    family: "'Lobster', cursive",
+  },
+  Oswald: {
+    import:
+      "@import url('https://fonts.googleapis.com/css2?family=Oswald&amp;display=swap');",
+    family: "'Oswald', sans-serif",
+  },
+  'Indie Flower': {
+    import:
+      "@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&amp;display=swap');",
+    family: "'Indie Flower', cursive",
+  },
+  'Fira Code': {
+    import:
+      "@import url('https://fonts.googleapis.com/css2?family=Fira+Code&amp;display=swap');",
+    family: "'Fira Code', monospace",
+  },
+  Impact: {
+    import: '',
+    family: 'Impact, Charcoal, sans-serif',
+  },
+  'JetBrains Mono': {
+    import:
+      "@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&amp;display=swap');",
+    family: "'JetBrains Mono', monospace",
+  },
 };
 
 function generateSvg(
   haiku,
-  { theme = 'catppuccin_mocha', layout = 'vertical', border = true }
+  {
+    theme = 'catppuccin_mocha',
+    layout = 'vertical',
+    border = true,
+    font = 'Fira Code',
+  }
 ) {
   const layouts = {
     vertical: {
@@ -70,6 +139,11 @@ function generateSvg(
   const colors = themes[theme] || themes.catppuccin_mocha;
   const paddingX = 16;
 
+  const selectedFont = fonts[font] || {
+    import: '',
+    family: 'Fira Code, monospace',
+  };
+
   const escapeHtml = (str) =>
     str
       .replace(/&/g, '&amp;')
@@ -82,8 +156,14 @@ function generateSvg(
   const totalTextHeight = lines.length * config.lineSpacing;
   const textY = (config.height - totalTextHeight) / 2 + config.fontSize;
 
-  let svg = `
+  const safeImport = selectedFont.import.replace(/&/g, '&amp;');
+
+  let svg = `<?xml version="1.0" encoding="UTF-8"?>
 <svg width="${config.width}" height="${config.height}" xmlns="http://www.w3.org/2000/svg">
+  <!-- Font import if needed -->
+  <style>
+    ${safeImport}
+  </style>
   <!-- Background with optional border -->
   <rect
     width="${config.width - 2}"
@@ -104,7 +184,7 @@ function generateSvg(
       x="${paddingX}" 
       y="${y}" 
       fill="${colors.text}" 
-      font-family="Fira Code, monospace" 
+      font-family="${selectedFont.family}" 
       font-size="${config.fontSize}" 
       text-anchor="start"
     >${line}</text>

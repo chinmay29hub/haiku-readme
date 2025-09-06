@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=horizontal&border=true&t=1747098465" alt="HaikuReadme SVG"/>
+  <img src="https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=horizontal&border=true&t=1757120438" alt="HaikuReadme SVG"/>
 </p>
 
 # HaikuReadme
@@ -22,7 +22,7 @@
 HaikuReadme generates poetic, customizable haiku SVGs you can embed in your GitHub profile. Choose from themes, layouts, and border styles — perfect for developers with a love for code and creativity.
 
 <p align="center">
-  <img src="https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=vertical&border=true&t=1747098465" alt="Example Haiku" />
+  <img src="https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=vertical&border=true&t=1757120438" alt="Example Haiku" />
 </p>
 
 🔗 **Live demo**: [HaikuReadme Web](https://chinmay29hub-haiku-readme.vercel.app)
@@ -76,7 +76,7 @@ HaikuReadme generates poetic, customizable haiku SVGs you can embed in your GitH
 Embed this in your GitHub README:
 
 ```markdown
-![HaikuReadme](https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=vertical&border=true&t=1747098465)
+![HaikuReadme](https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=vertical&border=true&t=1757120438)
 ```
 
 ### 🔧 Query Parameters
@@ -92,21 +92,21 @@ Embed this in your GitHub README:
 - Dracula theme, horizontal layout, no border:
 
   ```markdown
-  ![HaikuReadme](https://chinmay29hub-haiku-readme.vercel.app/api?theme=dracula&type=horizontal&border=false&t=1747098465)
+  ![HaikuReadme](https://chinmay29hub-haiku-readme.vercel.app/api?theme=dracula&type=horizontal&border=false&t=1757120438)
   ```
 
 - Cyberpunk theme, compact layout:
   ```markdown
-  ![HaikuReadme](https://chinmay29hub-haiku-readme.vercel.app/api?theme=cyberpunk&type=compact&border=true&t=1747098465)
+  ![HaikuReadme](https://chinmay29hub-haiku-readme.vercel.app/api?theme=cyberpunk&type=compact&border=true&t=1757120438)
   ```
 
 ## 🎨 Theme Previews
 
 | Theme            | Preview                                                                                                                         |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| catppuccin_mocha | ![catppuccin](https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=horizontal&border=true&t=1747098465) |
-| dracula          | ![dracula](https://chinmay29hub-haiku-readme.vercel.app/api?theme=dracula&type=horizontal&border=true&t=1747098465)             |
-| cyberpunk        | ![cyberpunk](https://chinmay29hub-haiku-readme.vercel.app/api?theme=cyberpunk&type=horizontal&border=true&t=1747098465)         |
+| catppuccin_mocha | ![catppuccin](https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=horizontal&border=true&t=1757120438) |
+| dracula          | ![dracula](https://chinmay29hub-haiku-readme.vercel.app/api?theme=dracula&type=horizontal&border=true&t=1757120438)             |
+| cyberpunk        | ![cyberpunk](https://chinmay29hub-haiku-readme.vercel.app/api?theme=cyberpunk&type=horizontal&border=true&t=1757120438)         |
 
 Explore more themes at [HaikuReadme Web](https://chinmay29hub-haiku-readme.vercel.app)
 
@@ -117,7 +117,7 @@ Explore more themes at [HaikuReadme Web](https://chinmay29hub-haiku-readme.verce
 Embed this in your GitHub README:
 
 ```markdown
-![HaikuReadme](https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=vertical&border=true&t=1747098465)
+![HaikuReadme](https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=vertical&border=true&t=1757120438)
 ```
 
 ---
@@ -330,10 +330,10 @@ Thanks goes to these wonderful people:
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/miguelro20"><img src="https://avatars.githubusercontent.com/u/193288551?v=4?s=100" width="100px;" alt="miguelro20"/><br /><sub><b>miguelro20</b></sub></a><br /><a href="https://github.com/chinmay29hub/haiku-readme/commits?author=miguelro20" title="Code">💻</a></td>
     </tr>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/svj96"><img src="https://avatars.githubusercontent.com/u/167889409?v=4?s=100" width="100px;" alt="svj96"/><br /><sub><b>svj96</b></sub></a><br /><a href="https://github.com/chinmay29hub/haiku-readme/commits?author=svj96" title="Code">💻</a> <a href="#ideas-svj96" title="Ideas, Planning, & Feedback">🤔</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/pr4j3sh"><img src="https://avatars.githubusercontent.com/u/75523737?v=4?s=100" width="100px;" alt="jesh"/><br /><sub><b>jesh</b></sub></a><br /><a href="https://github.com/chinmay29hub/haiku-readme/commits?author=pr4j3sh" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Binita-Sharma"><img src="https://avatars.githubusercontent.com/u/154619063?v=4?s=100" width="100px;" alt="Binita Sharma"/><br /><sub><b>Binita Sharma</b></sub></a><br /><a href="https://github.com/chinmay29hub/haiku-readme/commits?author=Binita-Sharma" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://allcontributors.org/"><img src="https://avatars.githubusercontent.com/u/46410174?v=4?s=100" width="100px;" alt="All Contributors"/><br /><sub><b>All Contributors</b></sub></a><br /><a href="https://github.com/chinmay29hub/haiku-readme/commits?author=all-contributors" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/shubhvj"><img src="https://avatars.githubusercontent.com/u/26573621?v=4?s=100" width="100px;" alt="Shubh Vrat Johri "/><br /><sub><b>Shubh Vrat Johri </b></sub></a><br /><a href="https://github.com/chinmay29hub/haiku-readme/commits?author=shubhvj" title="Code">💻</a> <a href="#ideas-shubhvj" title="Ideas, Planning, & Feedback">🤔</a></td> 
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/apps/allcontributors"><img src="https://avatars.githubusercontent.com/in/23186?v=4?s=100" width="100px;" alt="allcontributors[bot]"/><br /><sub><b>allcontributors[bot]</b></sub></a><br /><a href="https://github.com/chinmay29hub/haiku-readme/commits?author=allcontributors[bot]" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
