@@ -11,7 +11,20 @@
     { "word": "stream", "syllables": 1 },
     { "word": "dawn", "syllables": 1 },
     { "word": "coffee", "syllables": 2 },
-    { "word": "commit", "syllables": 2 }
+    { "word": "commit", "syllables": 2 },
+    { "word": "byte", "syllables": 1 },
+    { "word": "packet", "syllables": 2 },
+    { "word": "kernel", "syllables": 2 },
+    { "word": "terminal", "syllables": 3 },
+    { "word": "protocol", "syllables": 3 },
+    { "word": "compiler", "syllables": 3 },
+    { "word": "firewall", "syllables": 2 },
+    { "word": "script", "syllables": 1 },
+    { "word": "database", "syllables": 3 },
+    { "word": "silicon", "syllables": 3 },
+    { "word": "processor", "syllables": 3 },
+    { "word": "cache", "syllables": 1 },
+    { "word": "framework", "syllables": 2 }
   ],
   "verbs": [
     { "word": "flows", "syllables": 1 },
@@ -22,7 +35,14 @@
     { "word": "runs", "syllables": 1 },
     { "word": "build", "syllables": 1 },
     { "word": "merge", "syllables": 1 },
-    { "word": "brings", "syllables": 1 }
+    { "word": "brings", "syllables": 1 },
+    { "word": "deploy", "syllables": 2 },
+    { "word": "transmit", "syllables": 2 },
+    { "word": "reboot", "syllables": 2 },
+    { "word": "execute", "syllables": 3 },
+    { "word": "encrypt", "syllables": 2 },
+    { "word": "decode", "syllables": 2 },
+    { "word": "render", "syllables": 2 }
   ],
   "adjectives": [
     { "word": "swift", "syllables": 1 },
@@ -30,13 +50,23 @@
     { "word": "elegant", "syllables": 3 },
     { "word": "bright", "syllables": 1 },
     { "word": "bold", "syllables": 1 },
-    { "word": "clean", "syllables": 1 }
+    { "word": "clean", "syllables": 1 },
+    { "word": "virtual", "syllables": 3 },
+    { "word": "encrypted", "syllables": 3 },
+    { "word": "binary", "syllables": 3 },
+    { "word": "digital", "syllables": 3 },
+    { "word": "scalable", "syllables": 3 },
+    { "word": "dynamic", "syllables": 3 }
   ],
   "adverbs": [
     { "word": "softly", "syllables": 2 },
     { "word": "quickly", "syllables": 2 },
     { "word": "boldly", "syllables": 2 },
     { "word": "calmly", "syllables": 2 },
-    { "word": "carefully", "syllables": 3 }
+    { "word": "carefully", "syllables": 3 },
+    { "word": "remotely", "syllables": 3 },
+    { "word": "smoothly", "syllables": 2 },
+    { "word": "securely", "syllables": 3 },
+    { "word": "efficiently", "syllables": 4 }
   ]
 }
