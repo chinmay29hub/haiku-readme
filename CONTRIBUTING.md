@@ -18,38 +18,37 @@ Thanks for your interest in contributing! 🚀 Whether it’s fixing bugs, impro
    git checkout -b feature/amazing-feature
    ```
 
-4. Create a .env file in the backend directory and add the following variables:
+4. **Create a `.env` file in the `backend/` directory** with the following variables:
 
-```bash
-NODE_ENV=development
-```
+   ```bash
+   NODE_ENV=development
+   ```
 
-5. Backend
+5. **Start the backend**
 
-```bash
-cd backend
-npm install
-npm start
-```
+   ```bash
+   cd backend
+   npm install
+   npm start
+   ```
 
-- (Backend)Visit [http://localhost:3000/api?theme=catppuccin_mocha&type=vertical&border=true](http://localhost:3000/api?theme=catppuccin_mocha&type=vertical&border=true) to view the svg directly.
+   Visit [http://localhost:3000/api?theme=catppuccin_mocha&type=vertical&border=true](http://localhost:3000/api?theme=catppuccin_mocha&type=vertical&border=true) to view the SVG directly.
 
-1. Add .env to frontend directory and add the following variables:
+6. **Create a `.env` file in the `frontend/` directory** with the following variables:
 
-```bash
-VITE_API_URL=http://localhost:3000
-```
+   ```bash
+   VITE_API_URL=http://localhost:3000
+   ```
 
-1. Frontend
-   Open a new terminal tab/window:
+7. **Start the frontend** (open a new terminal tab/window):
 
-```bash
-cd frontend
-npm install
-npm run dev
-```
+   ```bash
+   cd frontend
+   npm install
+   npm run dev
+   ```
 
-- (Frontend)Visit [http://localhost:5173](http://localhost:5173) to view the app locally.
+   Visit [http://localhost:5173](http://localhost:5173) to view the app locally.
 
 8. **Make your changes** and commit
 
