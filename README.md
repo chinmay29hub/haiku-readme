@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=horizontal&border=true&t=1774146153" alt="HaikuReadme SVG"/>
+  <img src="https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=horizontal&border=true&t=1774751474" alt="HaikuReadme SVG"/>
 </p>
 
 # HaikuReadme
@@ -22,7 +22,7 @@
 HaikuReadme generates poetic, customizable haiku SVGs you can embed in your GitHub profile. Choose from themes, layouts, and border styles — perfect for developers with a love for code and creativity.
 
 <p align="center">
-  <img src="https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=vertical&border=true&t=1774146153" alt="Example Haiku" />
+  <img src="https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=vertical&border=true&t=1774751474" alt="Example Haiku" />
 </p>
 
 🔗 **Live demo**: [HaikuReadme Web](https://chinmay29hub-haiku-readme.vercel.app)
@@ -77,7 +77,7 @@ HaikuReadme generates poetic, customizable haiku SVGs you can embed in your GitH
 Embed this in your GitHub README:
 
 ```markdown
-![HaikuReadme](https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=vertical&border=true&t=1774146153)
+![HaikuReadme](https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=vertical&border=true&t=1774751474)
 ```
 
 ### 🔧 Query Parameters
@@ -94,26 +94,26 @@ Embed this in your GitHub README:
 - Dracula theme, horizontal layout, no border:
 
   ```markdown
-  ![HaikuReadme](https://chinmay29hub-haiku-readme.vercel.app/api?theme=dracula&type=horizontal&border=false&t=1774146153)
+  ![HaikuReadme](https://chinmay29hub-haiku-readme.vercel.app/api?theme=dracula&type=horizontal&border=false&t=1774751474)
   ```
 
 - Cyberpunk theme, compact layout with custom font:
   ```markdown
-  ![HaikuReadme](https://chinmay29hub-haiku-readme.vercel.app/api?theme=cyberpunk&type=compact&border=true&font=JetBrains+Mono&t=1774146153)
+  ![HaikuReadme](https://chinmay29hub-haiku-readme.vercel.app/api?theme=cyberpunk&type=compact&border=true&font=JetBrains+Mono&t=1774751474)
   ```
 
 - Custom font example:
   ```markdown
-  ![HaikuReadme](https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=vertical&border=true&font=Indie+Flower&t=1774146153)
+  ![HaikuReadme](https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=vertical&border=true&font=Indie+Flower&t=1774751474)
   ```
 
 ## 🎨 Theme Previews
 
 | Theme            | Preview                                                                                                                         |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| catppuccin_mocha | ![catppuccin](https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=horizontal&border=true&t=1774146153) |
-| dracula          | ![dracula](https://chinmay29hub-haiku-readme.vercel.app/api?theme=dracula&type=horizontal&border=true&t=1774146153)             |
-| cyberpunk        | ![cyberpunk](https://chinmay29hub-haiku-readme.vercel.app/api?theme=cyberpunk&type=horizontal&border=true&t=1774146153)         |
+| catppuccin_mocha | ![catppuccin](https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=horizontal&border=true&t=1774751474) |
+| dracula          | ![dracula](https://chinmay29hub-haiku-readme.vercel.app/api?theme=dracula&type=horizontal&border=true&t=1774751474)             |
+| cyberpunk        | ![cyberpunk](https://chinmay29hub-haiku-readme.vercel.app/api?theme=cyberpunk&type=horizontal&border=true&t=1774751474)         |
 
 Explore more themes at [HaikuReadme Web](https://chinmay29hub-haiku-readme.vercel.app)
 
@@ -124,7 +124,7 @@ Explore more themes at [HaikuReadme Web](https://chinmay29hub-haiku-readme.verce
 Embed this in your GitHub README:
 
 ```markdown
-![HaikuReadme](https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=vertical&border=true&font=Fira+Code&t=1774146153)
+![HaikuReadme](https://chinmay29hub-haiku-readme.vercel.app/api?theme=catppuccin_mocha&type=vertical&border=true&font=Fira+Code&t=1774751474)
 ```
 
 ---
