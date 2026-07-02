@@ -128,7 +128,7 @@ function generateSvg(
       lineSpacing: 24,
     },
     compact: {
-      width: 260,
+      width: 270,
       height: 200,
       fontSize: 12,
       lineSpacing: 18,
