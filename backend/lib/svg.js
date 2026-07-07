@@ -128,11 +128,11 @@ function generateSvg(
       lineSpacing: 24,
     },
     compact: {
-      width: 200,
+      width: 260,
       height: 200,
-      fontSize: 14,
+      fontSize: 12,
       lineSpacing: 18,
-    },
+},
   };
 
   const config = layouts[layout] || layouts.vertical;
