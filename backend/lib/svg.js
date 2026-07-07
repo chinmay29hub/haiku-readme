@@ -132,7 +132,7 @@ function generateSvg(
       height: 200,
       fontSize: 12,
       lineSpacing: 18,
-},
+    },
   };
 
   const config = layouts[layout] || layouts.vertical;
